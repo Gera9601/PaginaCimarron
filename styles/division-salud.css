@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+}
+.salud-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-areas: 
+    "silla guantes descripcion descripcion descripcion";
+    background-color: transparent;
+    margin-top: 7%;
+}
+
+.img-silla{
+    grid-area: silla;
+    overflow: hidden;
+}
+
+.img-silla img{
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block;
+}
+
+.img-guantes{
+    grid-area: guantes;
+    overflow: hidden;
+}
+
+.img-guantes img{
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block;
+}
+
+.descripcion-salud{
+    grid-area: descripcion;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-direction: column;
+    background-color: #5284FB;
+    padding: 5%;
+    color: white;
+}
+
+
+.salud-container-segundo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "collarin collarin reposapies reposapies descripcion-2 descripcion-2 descripcion-2"
+    "collarin collarin figuras figuras figuras figuras figuras";
+
+}
+
+.collarin-img{
+    grid-area: collarin;
+    overflow: hidden;
+    position: relative;
+}
+
+.reposapies-img{
+    grid-area: reposapies;
+    overflow: hidden;
+    position: relative;
+}
+
+.descripcion-salud-segundo{
+    grid-area: descripcion-2;
+    overflow:hidden;
+    padding: 10%;
+    color:black;
+}
+.descripcion-salud h1{
+    font-size: clamp(1rem, 2vw, 4rem);
+    color: white !important;
+}
+
+.descripcion-salud-segundo p,
+.descripcion-salud p{
+    margin: 0 !important;
+    font-size: clamp(0.7rem, 0.8vw, 4rem);
+}
+
+.figuras-img{
+    grid-area: figuras;
+   
+}
+
+.collarin-img img{
+    width: 100%;            /* Ancho de la imagen al 100% del contenedor */
+    height: auto;           /* Mantiene la proporción de aspecto de la imagen */
+    position: absolute;     /* Posiciona la imagen de forma absoluta dentro del contenedor */
+    top: 50%;               /* Centra verticalmente la imagen */
+    left: 50%;              /* Centra horizontalmente la imagen */
+    transform: translate(-50%, -50%); /* Centra exactamente la imagen en el centro */
+    object-fit: cover;      /* Escala la imagen para que cubra todo el contenedor */
+    object-position: 25% 50%;
+}
+.reposapies-img img{
+    width: 110%;            /* Ancho de la imagen al 100% del contenedor */
+    height: auto;           /* Mantiene la proporción de aspecto de la imagen */
+    position: absolute;     /* Posiciona la imagen de forma absoluta dentro del contenedor */
+    top:50%;               /* Centra verticalmente la imagen */
+    left: 50%;              /* Centra horizontalmente la imagen */
+    transform: translate(-50%, -50%); /* Centra exactamente la imagen en el centro */
+    object-fit: cover;      /* Escala la imagen para que cubra todo el contenedor */
+    object-position: 25% 50%;
+}
+.figuras-img img{
+    height: 100%;
+}
+
+@media (min-width: 1870px) {
+    .reposapies-img img{
+        width: 120%;
+    }
+    .collarin-img img{
+        width: 110%;
+    }
+  }
+
+@media screen and (max-width: 1203px) {
+
+    .descripcion-salud
+    {
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 1097px) {
+
+    .salud-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "descripcion descripcion descripcion silla"
+        "descripcion descripcion descripcion guantes";
+       
+    }
+
+    .descripcion-salud-segundo p,
+    .descripcion-salud p{
+        margin: 0 !important;
+        font-size: clamp(1rem, 2vw, 4rem);
+        margin-top: 5%;
+}
+    .salud-container-segundo{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "collarin descripcion-2 descripcion-2 descripcion-2"
+        "reposapies descripcion-2 descripcion-2 descripcion-2"
+        "figuras figuras figuras figuras";
+      
+    }
+
+    .reposapies-img img{
+        width: 120%;
+    }
+
+    .collarin-img img{
+        top: 66%;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+
+    .salud-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "descripcion descripcion"
+        "silla silla";
+        background-color: #5284FB;
+        /* mask-image: linear-gradient(
+            black 90%,
+            transparent
+        ); */
+    }
+    .img-guantes{
+        display: none;
+    }
+    .img-silla{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3%;
+        
+    }
+
+    .img-silla img{
+        width:50%;
+       
+    }
+
+    .salud-container-segundo{
+        width: 100%;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "descripcion-2"
+        "reposapies"
+        "figuras";
+        
+    }
+
+
+    .collarin-img{
+        display: none; /* Oculta la imagen de collarin */
+    }
+
+    .reposapies-img img,
+    .figuras-img img{
+        display: block; /* Muestra la imagen de figuras */
+        width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+        height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    }
+
+    .img-silla img{
+        mask-image: linear-gradient(
+            black 70%,
+            transparent
+        );
+        border-radius: 10px;
+    }
+}

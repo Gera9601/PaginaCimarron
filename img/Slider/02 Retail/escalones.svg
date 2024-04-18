@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="58.4816mm" height="32.3913mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1122.28 621.6"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#FD8D77}
+    .fil0 {fill:#FEC270}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2489019086480">
+   <polygon class="fil0" points="0,333.14 336.95,333.14 641.63,621.6 308.35,621.6 "/>
+   <polygon class="fil1" points="641.63,288.46 641.63,621.6 336.95,333.14 336.95,0 "/>
+   <polygon class="fil0" points="336.95,0 817.6,0 1122.28,288.46 641.63,288.46 "/>
+   <polygon class="fil1" points="-0,621.6 306.96,621.6 -0,333.14 "/>
+  </g>
+ </g>
+</svg>

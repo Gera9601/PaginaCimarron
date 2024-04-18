@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-estrategia{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "estrategia estrategia estrategia aspiracion aspiracion"
+    "imagen imagen imagen aspiracion aspiracion"
+    "imagen imagen imagen decoracion decoracion";
+    position: relative;
+    margin-top: 7%;
+}
+
+.titulo-estrategia{
+    grid-area: estrategia;
+}
+.aspiracion-texto{
+    grid-area: aspiracion;
+}
+.imagen-estrategia{
+    grid-area: imagen;
+}
+.decoracion{
+    grid-area: decoracion;
+}
+
+.titulo-estrategia{
+    padding: 10%;
+    padding-right: 15%;
+}
+.titulo-estrategia h1{
+    text-align: end;
+    font-family: "GraphikBold" !important;
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+.imagen-estrategia img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.triangulo-naranja{
+    position: absolute;
+    top: 0%;
+    left: 22%;
+}
+.triangulo-naranja img{
+    width: 170%;
+}
+.triangulo-azul{
+    position: absolute;
+    top: 20%;
+    left: 4%;
+}
+.triangulo-azul img{
+    width: 170%;
+}
+.aspiracion-texto{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: #243683;
+}
+.aspiracion-texto p{
+    margin-top: 4vw;
+    color: white;
+    font-size: clamp(0.7rem, 1.5vw, 1.5rem);
+}
+
+.aspiracion-texto h1{
+    text-align: start;
+    color: white !important;
+    font-family: "GraphikMedium" !important;
+    font-weight: lighter !important;
+    letter-spacing: 1px;
+}
+
+.decoracion img{
+    width: 100%;
+    height: 100%;
+}
+
+.triangulo-azul-arriba{
+    position: absolute;
+    top: 18%;
+    right: 5%;
+}
+.triangulo-azul-arriba img{
+    width: 170%;
+}
+.deco-movil,
+.deco-movil2{
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+
+    .grid-estrategia {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 0.5fr;
+        grid-template-rows: auto auto auto auto auto 0.6fr;
+        grid-template-areas: 
+        "estrategia estrategia estrategia"
+        "aspiracion aspiracion decoracion-movil"
+        "aspiracion aspiracion decoracion-movil"
+        "imagen imagen decoracion-movil"
+        "imagen imagen decoracion-movil"
+        "decoracion-movil2 decoracion decoracion";
+        position: relative;
+    }
+
+    .deco-movil {
+        grid-area: decoracion-movil;
+        display: block;
+        background-color: #FA9226;
+    }
+
+    .deco-movil2 {
+        grid-area: decoracion-movil2;
+        display: block;
+        background-color: #E2CCFD;
+    }
+    .titulo-estrategia h1{
+        font-size: clamp(1.2rem, 1.6rem, 2rem);
+    }
+
+    .triangulo-naranja{
+        top: 8%;
+    }
+
+    .triangulo-azul{
+        top: 48%;
+        left: 32%;
+    }
+
+    .aspiracion-texto{
+        padding: 5% 10% 40%;
+    }
+    .aspiracion-texto p{
+        font-size: clamp(0.8rem, 1rem, 2rem);
+    }
+    .aspiracion-texto h1{
+        font-size: clamp(1rem, 1.6rem, 2rem);
+        letter-spacing: 0;
+    }
+
+    .triangulo-azul-arriba{
+        transform: scaleY(-1);
+        top: 19%;
+        right: 8%;
+    }
+
+
+}
