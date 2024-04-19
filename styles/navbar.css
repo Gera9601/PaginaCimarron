@@ -1,69 +1,16 @@
-@font-face {
-    font-family: "GraphikRegular";
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikRegular.otf);
-    font-weight: 100;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: "GraphikSemibold";
-    font-weight: 900;
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikSemibold.otf);
-    font-style: bold;
-}
-
-@font-face {
-    font-family: "GraphikBold";
-    font-weight: 900;
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikBold.otf);
-    font-style: bold;
-}
-
-@font-face {
-    font-family: "GraphikMedium";
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikMedium.otf);
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "GraphikLighter";
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikLight.otf);
-    font-weight: lighter;
-    font-style: normal;
-}
-html{
-    scroll-behavior: smooth;
-}
-h1{
-    color: #A37535;
-    font-family: "GraphikRegular";
-    font-size: 2vw;
-}
-
-h2{
-    font-family: "GraphikBold";
-    font-size: 2vw;
-}
-
-p{
-    font-family: "GraphikLighter";
-}
-
-a {
-    text-decoration: none;
-
-}
-
 .barra-navegacion {
     width: 100%;
     padding: 0;
     height: auto;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     box-shadow: 0px 2px 10px rgb(211, 211, 211);
     z-index: 5;
     position: fixed;
+    transition: top 1s;
+}
+
+.barra-navegacion.hidden {
+    top: -100px; /* Ajusta el valor según el alto de tu navbar */
 }
 
 .barra-navegacion .menu-horizontal {
@@ -71,7 +18,6 @@ a {
     display: flex;
     list-style: none;
     text-decoration: none;
-    padding-top: 10px;
     padding-right: 40px;
     padding-left: 40px;
     align-items: center;
@@ -88,11 +34,11 @@ a {
 }
 
 .barra-navegacion ul .lista-texto a {
-    font-family: 'GraphikBold';
+    font-family: 'GraphikSemiBold';
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2vw;
 }
 
 .barra-navegacion ul .lista-texto:hover {
@@ -100,7 +46,7 @@ a {
 }
 
 .barra-navegacion ul li img {
-    height: 70px;
+    height: 4vw;
     cursor: pointer;
 }
 
@@ -126,13 +72,13 @@ nav ul li:hover .menu-vertical {
     background-color: #EAEAEA;
     box-shadow: 0px 2px 10px rgb(211, 211, 211);
     margin-top: 5px;
-    width: 120%;
+    width: 150%;
 }
 
 
 nav ul li .menu-vertical li {
     text-align: center;
-    padding: 0.8rem;
+    padding: 0.8rem 0.5rem;
     transition: all 200ms ease-in-out;
     cursor: pointer;
 
@@ -146,3 +92,212 @@ nav ul li .menu-vertical li:hover {
     border-left: 10px solid #A37535;
 
 }
+
+.menu-hamburguesa {
+    display: none;
+}
+
+.menu-hamburguesa-responsive {
+    display: none;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 1150px) {
+    /* .barra-navegacion ul li img {
+        height: 40px !important;
+    } */
+
+    
+    .barra-navegacion {
+        height: 70px !important;
+    }
+
+    .barra-navegacion ul .lista-texto a {
+        font-size: 0.9rem;
+    }
+
+    .barra-navegacion ul .lista-texto {
+
+        padding: 0.7rem;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .barra-navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .logo-mobile{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;   
+    }
+    .logo-mobile img{
+        width: 30vw;
+    }
+    .menu-hamburguesa{
+        margin-right: 3%;
+    }
+
+
+
+    .menu-hamburguesa {
+        display: block;
+        padding: 15px;
+    }
+
+    .menu-hamburguesa-responsive {
+        display: block;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .menu-horizontal {
+        display: none !important;
+    }
+
+    .hamburguesa-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        padding: 0;
+    }
+
+    .bar {
+        width: 30px;
+        height: 4px;
+        background-color: #000;
+    }
+
+    .menu-vertical-responsive.show {
+        display: block;
+    }
+
+    .menu-vertical-responsive {
+        
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #EAEAEA;
+        z-index: 9999;
+    }
+
+    .menu-vertical-responsive.show {
+        display: block; /* Mostrar cuando la clase .show está presente */
+        opacity: 1;
+        z-index: 11; /* Asegura que el menú sea visible por encima del resto */
+    }
+
+    .menu-vertical-responsive.show {
+        display: block;
+        opacity: 1;
+    }
+
+    .menu-vertical-responsive li {
+        text-align: center;
+        padding: 1rem;
+        
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .menu-vertical-responsive li:last-child {
+        border-bottom: none;
+    }
+
+    .menu-vertical-responsive li:hover {
+        background-color: #D7CCBC;
+    }
+
+    .hamburguesa-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 4px;
+        background-color: #A37535;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .menu-hamburguesa-responsive {
+        position: fixed;
+        top: 0%;
+        right: -300px; /* Empieza fuera de la pantalla */
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(234, 234, 234, 0.95); /* Color de fondo con opacidad */
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1); /* Sombra al lado derecho */
+        z-index: 1000;
+        transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0; /* Inicialmente transparente */
+        overflow-y: auto; /* Agregar scroll si es necesario */
+    }
+    
+    .menu-vertical-responsive {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        opacity: 0; /* Inicialmente oculto */
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .menu-vertical-responsive.show {
+        opacity: 1; /* Hace que el menú sea visible */
+    }
+    
+
+    
+    .menu-vertical-responsive li:hover {
+        background-color: #D7CCBC;
+    }
+    
+    .menu-hamburguesa-responsive.show {
+        right: 0; /* Muestra el menú al desplazarlo a la posición correcta */
+        opacity: 1; /* Hace que el menú sea visible */
+    }
+    
+    /* Estilos para el botón hamburguesa */
+    .hamburguesa-btn {
+        /* ... (otros estilos) ... */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .hamburguesa-btn.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .hamburguesa-btn.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburguesa-btn.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+
+

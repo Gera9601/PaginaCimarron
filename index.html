@@ -4,10 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página principal para Grupo Cimarrón">
+    <meta name="keywords" content="Dulces, Salud, Confitería, Chocolates, Despensas, Botana, BorreGo, Borreguito, Borreguita, Chihuahua, Delicias, Pistacho, Mundo ">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="GRUPO CIMARRÓN">
+
+
+
+
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/navbar.css">
 
     <title>Grupo Cimarrón</title>
 </head>
@@ -15,6 +24,16 @@
 <body>
 
     <nav class="barra-navegacion" id="navbar">
+        <div class="logo-mobile">
+            <img src="img/Logo/gc_logo.svg" alt="logo">
+        </div>
+        <div class="menu-hamburguesa">
+            <button class="hamburguesa-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
         <ul class="menu-horizontal">
             <li class="lista-texto"><a href="#">NOSOTROS</a>
                 <ul class="menu-vertical">
@@ -26,12 +45,12 @@
             </li>
             <li class="lista-texto"><a href="#">DIVISIONES</a>
                 <ul class="menu-vertical">
-                    <li><a href="#">RETAIL</a></li>
-                    <li><a href="views/division_alimentos.html">ALIMENTOS</a></li>
-                    <li><a href="views/division-salud.html">SALUD</a></li>
-                    <li><a href="views/division-seguridad.html">SEGURIDAD</a></li>
-                    <li><a href="#">TECNOLOGÍA</a></li>
-                    <li><a href="#">ESCOLAR</a></li>
+                    <a href="#"><li>RETAIL</li></a>
+                    <a href="division_alimentos.html"><li>ALIMENTOS</li></a>
+                    <a href="division-salud.html"><li>SALUD</li></a>
+                    <a href="division-seguridad.html"><li>SEGURIDAD</li></a>
+                    <a href="#"><li>TECNOLOGÍA</li></a>
+                    <a href="#"><li>ESCOLAR</li></a>
                 </ul>
             </li>
             <li class="lista-texto"><a href="#">PRODUCTOS</a>
@@ -42,9 +61,9 @@
                     <li><a href="#">MAYOREO</a></li>
                 </ul>
             </li>
-            <li><a href="#"><img src="img/Logo/gc_logo.svg" alt="Logo Cimarrón"></a></li>
+            <li><a href="../index.html"><img src="img/Logo/gc_logo.svg" alt="Logo Cimarrón"></a></li>
             <li class="lista-texto"><a href="#">FUNDACIÓN</a></li>
-            <li class="lista-texto"><a href="views/vacantes.html">VACANTES</a></li>
+            <li class="lista-texto"><a href="views/vacantes.html">¡TRABAJA CON NOSOTROS!</a></li>
             <li class="lista-texto"><a href="#">CONTACTO</a>
                 <ul class="menu-vertical">
                     <li><a href="#">NUESTRA HISTORIA</a></li>
@@ -54,6 +73,16 @@
                 </ul>
             </li>
         </ul>
+
+        <div class="menu-hamburguesa-responsive">
+            <ul class="menu-vertical-responsive">
+                <li>NOSOTROS</li>
+                <li>DIVISIONES</li>
+                <li>PRODUCTOS</li>
+                <li>VACANTES</li>
+                <li>CONTACTO</li>
+            </ul>
+        </div>
     </nav>
     <div class="container">
         <!-- Contenido del slider -->
@@ -568,6 +597,7 @@
         </div>
     </div>
     <script src="javascript/index.js"></script>
+    <script src="javascript/navbar.js"></script>
     <!-- ......_██_
         ( ! o o ! )
         .) ( O ) (

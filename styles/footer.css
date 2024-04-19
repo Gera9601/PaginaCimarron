@@ -277,6 +277,29 @@ a {
     width: 225%;
 }
 
-
 }
 
+
+@media screen and (max-width: 460px) {
+    .certif-img img {
+        width: 100%;
+    }
+
+    .enlaces-enlaces {
+        font-size: 12px;
+    }
+    .desc-footer p {
+        font-size: clamp(0.7rem, 1vw, 1rem) !important;
+    }
+
+    .redes-sociales-footer a img{
+        width: 180%;
+    }
+    .pie-pagina .pie-copy p, 
+    .pie-pagina .pie-aviso p{
+        font-size: 2vw;
+    }
+    .pie-pagina .pie-copy p{
+        margin-bottom: 2%;
+    }
+}

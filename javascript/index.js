@@ -89,28 +89,28 @@ contenedorNoticias.addEventListener('wheel', (event) => {
 });
 
 
-const fecha = new Date();
-const añoActual = fecha.getFullYear();
+// const fecha = new Date();
+// const añoActual = fecha.getFullYear();
 
-document.getElementById("año").textContent = añoActual;
+// document.getElementById("año").textContent = añoActual;
 
 
-let lastScrollTop = 0;
-const navbar = document.getElementById("navbar");
+// let lastScrollTop = 0;
+// const navbar = document.getElementById("navbar");
 
-window.addEventListener("scroll", function() {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+// window.addEventListener("scroll", function() {
+//     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-        // Scroll hacia abajo
-        navbar.style.top = "-100px";
-    } else {
-        // Scroll hacia arriba
-        navbar.style.top = "0";
-    }
+//     if (scrollTop > lastScrollTop) {
+//         // Scroll hacia abajo
+//         navbar.style.top = "-100px";
+//     } else {
+//         // Scroll hacia arriba
+//         navbar.style.top = "0";
+//     }
 
-    lastScrollTop = scrollTop;
-});
-window.addEventListener("touchend", function(event) {
-  lastScrollTop = parseInt(navbar.style.top) || 0;
-});
+//     lastScrollTop = scrollTop;
+// });
+// window.addEventListener("touchend", function(event) {
+//   lastScrollTop = parseInt(navbar.style.top) || 0;
+// });

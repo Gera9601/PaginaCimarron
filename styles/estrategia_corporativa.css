@@ -159,3 +159,10 @@ body{
 
 
 }
+
+@media screen and (max-width: 750px) {
+    .triangulo-naranja{
+        top: 5%;
+        left: 17%;
+    }
+}

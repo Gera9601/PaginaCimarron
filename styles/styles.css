@@ -201,7 +201,7 @@ nav ul li .menu-vertical li:hover {
 .slider {
     position: relative;
     overflow: hidden;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 .slider-inner {
@@ -1419,18 +1419,6 @@ nav ul li .menu-vertical li:hover {
 
 @media screen and (max-width: 930px) {
 
-    .barra-navegacion {
-        height: 70px;
-    }
-
-    .barra-navegacion ul .lista-texto a {
-        font-size: 0.8rem;
-    }
-
-    .barra-navegacion ul .lista-texto {
-
-        padding: 0.6rem;
-    }
 
     #prevBtn,
     #nextBtn {
@@ -1486,23 +1474,7 @@ nav ul li .menu-vertical li:hover {
 /*Inicio de diseño para movil barra de navegación*/
 @media screen and (max-width: 950px) {
 
-    .barra-navegacion ul li img {
-        height: 40px;
-    }
-
-    .barra-navegacion {
-        display: none;
-    }
-
-    .barra-navegacion ul .lista-texto a {
-        font-size: 0.7rem;
-    }
-
-    .barra-navegacion ul .lista-texto {
-
-        padding: 0.6rem;
-    }
-
+    
     #prevBtn,
     #nextBtn {
         font-size: medium;
@@ -1833,8 +1805,6 @@ nav ul li .menu-vertical li:hover {
         padding: 4%;
     }
 
-    
-
     .grid-crecemos-item-grande2-mobile{
         display: flex;
         grid-column-end: span 2;
@@ -2025,6 +1995,17 @@ nav ul li .menu-vertical li:hover {
     #nextBtn{
         left: 65%;
         top: 69%;
+    }
+
+    .certif-img img {
+        width: 100%;
+    }
+
+    .enlaces-enlaces {
+        font-size: 12px;
+    }
+    .desc-footer p {
+        font-size: clamp(0.7rem, 1vw, 1rem) !important;
     }
 }
 
