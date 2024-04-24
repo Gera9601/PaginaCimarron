@@ -1,383 +1,583 @@
-@font-face {
-    font-family: "GraphikRegular";
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikRegular.otf);
-    font-weight: 100;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: "GraphikSemibold";
-    font-weight: 900;
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikSemibold.otf);
-    font-style: bold;
-}
-
-@font-face {
-    font-family: "GraphikBold";
-    font-weight: 900;
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikBold.otf);
-    font-style: bold;
-}
-
-@font-face {
-    font-family: "GraphikMedium";
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikMedium.otf);
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "GraphikLighter";
-    src: url(../fonts/Graphik-Font-Family/Graphik-Font-Family/GraphikLight.otf);
-    font-weight: lighter;
-    font-style: normal;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-h1 {
-    color: #A37535;
-    font-family: "GraphikRegular";
-    font-size: 2vw;
-}
-
-h2 {
-    font-family: "GraphikBold";
-    font-size: 2vw;
-}
-
-p {
-    font-family: "GraphikLighter";
-}
-
-a {
-    text-decoration: none;
-
-}
-
-/* .row{
- margin: 0;
-} */
-
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
-.contenedor {
-    max-width: 1400px;
-    margin: 0 auto;
-    height: auto;
-    background-color: white;
-    overflow: hidden;
-
-    /* Cambia el color de fondo según sea necesario */
+body ol{
+    list-style-type: decimal;
 }
 
-.quienes-somos {
+.grid-portada{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "portada portada portada portada portada"
+    "descripcion descripcion descripcion decoracion decoracion";
+    margin-top: 8%;
+}
+
+.imagen-portada{
+    grid-area: portada;
     width: 100%;
-    margin-top: 9%;
 }
 
-.quienes-img-ppal {
+.descripcion-portada{
+    grid-area: descripcion;
     position: relative;
-}
-
-.quienes-img-ppal img {
-    width: 100%;
-}
-
-.quienes-img-ppal h1 {
-    position: absolute;
-    top: 13%;
-    left: 37%;
-    color: #A37535;
-    font-family: "GraphikRegular";
-    font-size: clamp(1rem, 2vw, 2.5rem);
-
-}
-
-.quienes-img-ppal h2 {
-    position: absolute;
-    top: 13%;
-    left: 51%;
-    color: white;
-    font-size: clamp(1rem, 2vw, 2.5rem);
-
-}
-
-.quienes-img-ppal div {
-    position: absolute;
-    top: 12%;
-    left: 7%;
-}
-
-.quienes-img-ppal div .triangulo-cremita-arriba {
-    width: 68%;
-
-}
-
-.escaleras-quienes {
-    background-color: #FDDACF;
     display: flex;
-    justify-content: end;
-    align-items: end;
-    position: relative;
+    flex-direction: column;
 }
-
-.escaleras-quienes .escalones-quienes {
-    width: 100%;
-}
-
-.escaleras-quienes .triangulo-arriba-quienes {
+.deco-decoracion{
     position: absolute;
     top: 10%;
-    left: 10%;
-    width: 20%;
+    left: 5%;
+}
+.deco-decoracion img{
+    width: 80% !important;
 }
 
-.triangulo-quienes {
+.decoracion-portada{
+    grid-area: decoracion;
+    position: relative;
+    background-color: #FDDACF;
+}
+
+.decoracion-portada img{
     width: 100%;
+    height: 100%;
+}
+
+.imagen-portada img{
+    width: 100%;
+    height: 100%;
+}
+
+.texto-portada{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EAEAEA;
-    padding: 3%;
-}
-
-.triangulo-quienes img {
-    width: 11%;
-}
-
-.quienes-descripcion {
-    height: auto;
-    padding-left: 0;
-}
-
-.descr {
+    padding: 5%;
     background-color: #A37535;
-    width: 100%;
-    padding-bottom: 2%;
-}
-
-.descr p {
     color: white;
-    padding: 2%;
 }
 
-.row .quienes-descripcion {
-    padding-right: 0px !important;
-}
-
-/* Inicio seccion recuadros colores */
-.recuadros-colores {
-    width: 100%;
-    background-color: transparent;
-    height: auto;
-    padding: 2% 4%;
-}
-
-.adn-cimarron {
-    background-color: #29B16E;
-    padding: 2%;
-}
-
-.titulo-adn {
-    width: 100%;
+.triangulo-abajo-portada{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    height: auto;
+    padding: 3% 0%;
+    background-color: #EAEAEA;
+    height: 100%;
 }
 
-.titulo-adn p {
+.triangulo-abajo-portada img{
+    width: 10% !important;
+}
+
+.adn-cimarron{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: #29B16E;
+}
+
+.titulo-adn{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+    padding: 10%;
+}
+
+.titulo-adn h1{
     text-align: end;
-    font-size: clamp(2rem, 2vw, 4rem);
-    margin-right: 5%;
+    font-weight: lighter;
+    margin-right: 3%;
     color: white;
 }
 
-.titulo-adn img {
-    width: 15%;
-    margin-left: 3%;
+.titulo-adn img{
+    width: 20% !important;
 }
 
-.lista-adn {
+.adn-cimarron .lista-adn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
     color: white;
 }
 
-.vision-cimarron {
-    margin-top: 2% !important;
-}
+/* vision */
 
-.titulo-vision {
-    background-color: #A37535;
-    padding: 2%;
-}
-
-.titulo-vision p {
-    color: white;
-    font-size: clamp(2rem, 2vw, 4rem);
-}
-
-.titulo-vision img {
-    width: 10%;
-}
-
-.descripcion-vision {
-    background-color: #FD8D77;
-}
-
-.descripcion-vision p {
-    color: white;
-    margin-right: 5%;
-}
-
-.mision-cimarron {
-    margin-top: 2% !important;
-}
-
-.titulo-mision {
-    padding: 2%;
-    background-color: #243683;
-}
-
-.titulo-mision img {
-    width: 10%;
-}
-
-.titulo-mision p {
-    color: white;
-    font-size: clamp(2rem, 2vw, 4rem);
-}
-
-.descripcion-mision {
-    background-color: #B789FC;
-}
-
-.descripcion-mision p {
-    color: white;
-}
-
-.manifiesto {
-    margin-top: 2% !important;
-}
-
-.descripcion-manifiesto {
-    background-color: #5284FB;
-    padding: 2%;
-}
-
-.descripcion-manifiesto p {
-    color: white;
-    margin-right: 7%;
-}
-
-.titulo-manifiesto {
-    background-color: #5284FB;
-}
-
-.titulo-manifiesto p {
-    color: white;
-    font-size: clamp(2rem, 2vw, 4rem);
-    padding: 2%;
-}
-
-.titulo-manifiesto img {
-    width: 10%;
-}
-.act-juga,
-.trab-resp,
-.val-venc{
-    margin-top: 3% !important;
-}
-.valores-title{
-    width: 100%;
-}
-
-.valores-title p{
-    font-size: clamp(2rem, 2vw, 4rem);
-    padding: 2%;
-    color: white;
-}
-
-.vencidos-title{
-    width: 100%;
-}
-
-.vencidos-img div img{
-    width: 100%;
-}
-
-.vencidos-img{
-    padding-right: 0% !important;
-}
-
-.vencidos-container .texto-vencidos{
-    background-color: #FA9226;
-    color: white;
+.vision-cimarron{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     
 }
 
-.valores-container{
+.titulo-vision img{
+    transform: scaleX(-1);
+}
+
+.titulo-vision{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 8%;
+    background-color: #A37535;
+}
+
+.titulo-vision h1{
+    color: white !important;
+    font-weight: lighter;
+    margin-left: 5%;
+}
+
+.descripcion-vision{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #FD8D77;
+}
+
+.descripcion-vision p{
+    text-align: end;
+    color: white;
+    margin-right: 10%;
+}
+
+.titulo-vision img{
+    width: 10% !important;
+}
+
+/* MISION */
+
+.mision-cimarron{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.titulo-mision{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+    padding: 8%;
     background-color: #243683;
 }
 
-/* trabajamos y respondemos seccion inicio */
+.titulo-mision img{
+    width: 11% !important;
+}
 
-.jugamos-img div img,
-.actuamos-img div img,
-.respondemos-img div img,
-.trabajamos-img div img{
+.titulo-mision h1{
+    color: white;
+    font-weight: lighter;
+}
+
+.descripcion-mision{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #B789FC;
+}
+
+.descripcion-mision p{
+    margin-left: 5%;
+    color: white;
+}
+
+/* Manifiesto */
+
+.manifiesto-cimarron{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    background-color:#5284FB;
+}
+
+.titulo-manifiesto img{
+    transform: scaleX(-1);
+}
+
+.titulo-manifiesto{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 8%;
+   
+}
+
+.titulo-manifiesto h1{
+    color: white !important;
+    font-weight: lighter;
+    margin-left: 5%;
+}
+
+.descripcion-manifiesto{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.descripcion-manifiesto p{
+    text-align: end;
+    color: white !important;
+    margin-right: 10%;
+}
+
+.titulo-manifiesto img{
+    width: 10% !important;
+}
+
+.cuadros-colores{
+    padding: 5%;
+    padding-bottom: 2%;
+}
+.vision-cimarron,
+.mision-cimarron,
+.manifiesto-cimarron {
+    margin-top: 30px;    /* Espacio entre cada bloque */
+}
+
+/* cuadros de colores  */
+
+.cuadros-colores-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    padding: 5%;
+    padding-top: 0;
+    height: auto;
+    gap: 20px;
+}
+
+.valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #243683;
+}
+
+.valores h1{
+    color: white;
+    font-size: clamp(2rem, 3vw, 5rem);
+    font-family: "GraphikLighter" !important;
+    font-weight: lighter;
+}
+
+.valores-valor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+.valores-valor img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-
-.respondemos-img,
-.trabajamos-img{
-    padding: 0 !important;
+.descripcion-valor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FA9226;
+    color: white;
 }
 
+.trabajamos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
 
 .texto-trabajamos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #29B16E;
     color: white;
 }
 
-.texto-respondemos{
-    background-color:#243683 ;
-    background-clip: content-box;
-    color: white;
+.texto-trabajamos p{
+    text-align: end;
+}
+
+.img-trabajamos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-trabajamos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.respondemos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
 }
 
 .texto-respondemos{
-    padding-right: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #243683;
+    color: white;
+}
+
+.texto-respondemos p{
+    text-align: end;
+}
+
+.img-respondemos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-respondemos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.actuamos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
 }
 
 .texto-actuamos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
     background-color: #A37535;
     color: white;
 }
-
-.actuamos-img{
-    padding: 0 !important;
+.texto-actuamos p{
+    padding-left: 10%;
+}
+.img-actuamos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.jugamos-img{
-    padding-right: 0% !important;
+.img-actuamos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jugamos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
 }
 
 .texto-jugamos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
     background-color: #5284FB;
     color: white;
 }
+.texto-jugamos p{
+    padding-left: 10%;
+}
+.img-jugamos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-jugamos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 950px) {
+    .cuadros-colores-2{
+        grid-template-columns: 1fr;
+    }
+
+    .cuadros-colores-2 p{
+        font-size: clamp(0.8rem, 2vw, 3rem);
+    }
+
+    .valores{
+        padding: 10%;
+        margin-top: 4%;
+    }
+
+    .adn-cimarron{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat((2, auto));
+        grid-template-areas: "titulo titulo"
+        "lista1 lista2";
+    }
+    .titulo-adn{
+        grid-area: titulo;
+    }
+    .lista1{
+        grid-area: lista1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .lista2{
+        grid-area: lista2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista-adn{
+        padding: 6%;
+        margin: 3%;
+    }
+
+    .titulo-adn{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .titulo-adn h1{
+        font-size: clamp(2rem, 3vw, 4rem);
+    }
+
+    .titulo-adn img{
+        transform: rotate(90deg);
+    }
+
+    .vision-cimarron{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "titulo"
+        "descripcion";
+    }
+
+    .descripcion-vision{
+        grid-area: descripcion;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .descripcion-vision p{
+        text-align: center;
+        font-size: clamp(0.8rem, 2vw, 3rem);
+    }
+
+    .titulo-vision{
+        grid-area: titulo;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+    .titulo-vision h1{
+        font-size: clamp(1.5rem, 3vw, 3rem);
+    }
+    .titulo-vision img{
+        transform: rotate(90deg);
+    }
 
 
 
+    .mision-cimarron{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "titulo"
+        "descripcion";
+    }
+
+    .descripcion-mision{
+        grid-area: descripcion;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .descripcion-mision p{
+        text-align: center;
+        font-size: clamp(0.8rem, 2vw, 3rem);
+    }
 
 
-/* trabajamos y respondemos seccion fin */
+    .titulo-mision{
+        grid-area: titulo;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+    .titulo-mision h1{
+        font-size: clamp(1.5rem, 3vw, 3rem);
+    }
+    .titulo-mision img{
+        transform: rotate(90deg);
+    }
 
-/* fin de seccion recuadros colores */
+    .manifiesto-cimarron{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "titulo"
+        "descripcion";
+    }
+
+    .descripcion-manifiesto{
+        grid-area: descripcion;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .descripcion-manifiesto p{
+        text-align: center;
+        font-size: clamp(0.8rem, 2vw, 3rem);
+    }
+
+    .titulo-manifiesto{
+        grid-area: titulo;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+    .titulo-manifiesto h1{
+        font-size: clamp(1.5rem, 3vw, 3rem);
+    }
+    .titulo-manifiesto img{
+        transform: rotate(90deg);
+    }
+    .triangulo-abajo-portada{
+        display: none;
+    }
+    .decoracion-portada{
+        display: none;
+    }
+
+    .grid-portada{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "portada"
+        "descripcion";
+        margin-top: 20%;
+    }
+}

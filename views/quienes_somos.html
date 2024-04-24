@@ -7,276 +7,228 @@
     <!-- <link rel="stylesheet" href="../styles/navbar.css"> -->
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/quienes_somos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <title>Grupo Cimarrón</title>
 </head>
 
 <body>
-
-    <nav class="barra-navegacion">
+    <nav class="barra-navegacion" id="navbar">
+        <div class="logo-mobile">
+            <img src="../img/Logo/gc_logo.svg" alt="logo">
+        </div>
+        <div class="menu-hamburguesa">
+            <button class="hamburguesa-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
         <ul class="menu-horizontal">
             <li class="lista-texto"><a href="#">NOSOTROS</a>
                 <ul class="menu-vertical">
-                    <li><a href="#">NUESTRA HISTORIA</a></li>
-                    <li><a href="#">¿QUIENES SOMOS?</a></li>
-                    <li><a href="#">ESTRATEGIA CORPORATIVA</a></li>
-                    <li><a href="#">LIDERAZGO</a></li>
+                    <a href="#">
+                        <li>NUESTRA HISTORIA</li>
+                    </a>
+                    <a href="quienes_somos.html">
+                        <li>¿QUIENES SOMOS?</li>
+                    </a>
+                    <a href="estrategia_corporativa.html">
+                        <li>ESTRATEGIA CORPORATIVA</li>
+                    </a>
+                    <a href="#">
+                        <li>LIDERAZGO</li>
+                    </a>
                 </ul>
             </li>
             <li class="lista-texto"><a href="#">DIVISIONES</a>
                 <ul class="menu-vertical">
-                    <li><a href="#">RETAIL</a></li>
-                    <li><a href="#">ALIMENTOS</a></li>
-                    <li><a href="#">SALUD</a></li>
-                    <li><a href="#">SEGURIDAD</a></li>
-                    <li><a href="#">TECNOLOGÍA</a></li>
-                    <li><a href="#">ESCOLAR</a></li>
+                    <a href="#">
+                        <li>RETAIL</li>
+                    </a>
+                    <a href="division_alimentos.html">
+                        <li>ALIMENTOS</li>
+                    </a>
+                    <a href="division-salud.html">
+                        <li>SALUD</li>
+                    </a>
+                    <a href="division-seguridad.html">
+                        <li>SEGURIDAD</li>
+                    </a>
+                    <a href="#">
+                        <li>TECNOLOGÍA</li>
+                    </a>
+                    <a href="#">
+                        <li>ESCOLAR</li>
+                    </a>
                 </ul>
             </li>
             <li class="lista-texto"><a href="#">PRODUCTOS</a>
 
                 <ul class="menu-vertical">
-                    <li><a href="#">CIMARRÓN.SHOP</a></li>
-                    <li><a href="#">SOTOL CUERNOS</a></li>
-                    <li><a href="#">MAYOREO</a></li>
-                </ul>
-
-            </li>
-            <li><a href="../index.html"><img src="../img/Logo/gc_logo.svg" alt="Logo Cimarrón"></li></a>
-            <li class="lista-texto"><a href="#">FUNDACIÓN</a></li>
-            <li class="lista-texto"><a href="#">VACANTES</a></li>
-            <li class="lista-texto"><a href="#">CONTACTO</a>
-                <ul class="menu-vertical">
-                    <li><a href="#">NUESTRA HISTORIA</a></li>
-                    <li><a href="#">¿QUIENES SOMOS?</a></li>
-                    <li><a href="#">ESTRATEGIA CORPORATIVA</a></li>
-                    <li><a href="#">LIDERAZGO</a></li>
+                    <a href="https://cimarron.shop/" target="_blank">
+                        <li>CIMARRÓN.SHOP</li>
+                    </a>
+                    <a href="https://sotolcuernos.mx/" target="_blank">
+                        <li>SOTOL CUERNOS</li>
+                    </a>
+                    <a href="#">
+                        <li>MAYOREO</li>
+                    </a>
                 </ul>
             </li>
+            <li><a href="../index.html"><img src="../img/Logo/gc_logo.svg" alt="Logo Cimarrón"></a></li>
+            <a href="#">
+                <li class="lista-texto">FUNDACIÓN
+            </a></li>
+            <a href="#">
+                <li class="lista-texto"><a href="vacantes.html">¡TRABAJA CON NOSOTROS!</a></li>
+                <li class="lista-texto"><a href="#">CONTACTO</a>
+                    <ul class="menu-vertical">
+                        <a href="servicio_al_cliente.html">
+                            <li>SERVICIO AL CLIENTE</li>
+                        </a>
+                        <a href="#">
+                            <li>PROVEEDORES</li>
+                        </a>
+                    </ul>
+                </li>
         </ul>
+
+        <div class="menu-hamburguesa-responsive">
+            <ul class="menu-vertical-responsive">
+                <li>NOSOTROS</li>
+                <li>DIVISIONES</li>
+                <li>PRODUCTOS</li>
+                <li>VACANTES</li>
+                <li>CONTACTO</li>
+            </ul>
+        </div>
     </nav>
-
-    <div class="contenedor">
-        <section class="quienes-somos">
-            <div class="row">
-                <div class="quienes-img-ppal col-md-12">
-                    <img src="../img/QuienesSomos/Enmascarar grupo 83.png" alt="Grupo Cimarrón">
-                    <h1><b>¿QUIÉNES</b></h1>
-                    <h2>SOMOS?</h2>
-                    <div><img src="../img/QuienesSomos/Capa_x0020_1.svg" alt="triangulo arriba"
-                            class="triangulo-cremita-arriba"></div>
+    <div class="container">
+        <div class="grid-portada">
+            <div class="imagen-portada"><img src="../img/QuienesSomos/Enmascarar grupo 83.png" alt="portada"></div>
+            <div class="descripcion-portada">
+                <div class="texto-portada">
+                    <p>Somos Grupo Cimarrón, una empresa comprometida contigo desde 1985, en ciudad Delicias, Chihuahua
+                        dimos nuestros primeros pasos como una comercializadora de pistachos. A lo largo de los
+                        años hemos crecido en la industria Alimentaria en México, trazando camino hacia nuevas
+                        fronteras e industrias. <br> <br> Con un orgullo mexicano y un arraigo chihuahuense, en Grupo
+                        Cimarrón avanzamos junto a ti, forjando un legado audaz mientras dejamos huellas en cada
+                        etapa de nuestra historia, y en cada paso que damos escalamos contigo</p>
                 </div>
-                <div class="quienes-descripcion col-md-8">
-                    <div class="descr pt-3">
-                        <p>Somos Grupo Cimarrón, una empresa comprometida contigo desde 1985. en ciudad Delicias,
-                            Chihuahua dimos nuestros primeros pasos como una comercializadora de pistachos. A lo largo
-                            de los años hemos crecido en la industria Alimentaria en México, trazando camino hacia
-                            nuevas fronteras e industrias <br><br> Con un orgullo mexicano y un arraigo chihuahuense, en
-                            Grupo Cimarrón avanzamos junto a ti, forjando un legado audaz mientras dejamos huellas en
-                            cada etapa de nuestra historia, y en cada paso que damos escalamos contigo.</p>
-                    </div>
-                    <div class="triangulo-quienes">
-                        <img src="../img/QuienesSomos/triangulo_abajo.png" alt="triangulo_abajo">
-                    </div>
-                </div>
-                <div class="escaleras-quienes col-md-4">
-                    <img src="../img/QuienesSomos/escalera_naranja.png" alt="escalera_naranja"
-                        class="escalones-quienes">
-                    <img src="../img/QuienesSomos/triangulo arriba.png" alt="triangulo arriba"
-                        class="triangulo-arriba-quienes">
+                <div class="triangulo-abajo-portada">
+                    <img src="../img/QuienesSomos/triangulo_abajo.png" alt="triangulo abajo">
                 </div>
             </div>
-        </section>
+            <div class="decoracion-portada">
+                <img src="../img/QuienesSomos/escalera_naranja.png" alt="decoracion">
+                <div class="deco-decoracion">
+                    <img src="../img/QuienesSomos/flecha_arribaCapa_x0020_1.png" alt="decoracion">
+                </div>
+            </div>
+        </div>
 
-        <section class="recuadros-colores">
-            <div class="row">
-                <div class="adn-cimarron col-md-12">
-                    <div class="row">
-                        <div class="col-md-4 titulo-adn">
-                            <p>ADN <br> CIMARRÓN</p>
-                            <img src="../img/QuienesSomos/flecha blancaCapa_x0020_1.png" alt="flecha adn"
-                                class="flecha-adn">
-                        </div>
-                        <div class="col-md-4 lista-adn">
-                            <ol>
-                                <li>Ten enfoque en las necesidades del cliente.</li>
-                                <li class="mt-3">Cumple tus compromisos.</li>
-                                <li class="mt-3">Anticipa las necesidades.</li>
-                                <li class="mt-3">Se rápido.</li>
-                            </ol>
-                        </div>
-                        <div class="col-md-4 lista-adn">
-                            <ol start="5">
-                                <li class="mt-3">Fomenta la comunicación.</li>
-                                <li class="mt-3">Toma decisiones con base a data.</li>
-                                <li class="mt-3">Demuestra rendición de cuentas individual y en equipo.</li>
-                            </ol>
-                        </div>
-                    </div>
+        <div class="cuadros-colores">
+
+            <div class="adn-cimarron">
+                <div class="titulo-adn">
+                    <h1>ADN <br> CIMARRÓN</h1>
+                    <img src="../img/QuienesSomos/flecha blancaCapa_x0020_1.png" alt="">
+                </div>
+                <div class="lista-adn lista1">
+                    <ol>
+                        <li><p>Ten enfoque en las necesidades del cliente</p></li>
+                        <li><p>Cumple tus compromisos</p></li>
+                        <li><p>Anticipa las necesidades</p></li>
+                        <li><p>Se rápido</p></li>
+                    </ol>
+                </div>
+                <div class="lista-adn lista2">
+                    <ol start="5" >
+                        <li><p>Fomenta la comunicación</p></li>
+                        <li><p>Toma decisiones con base a data</p></li>
+                        <li><p>Demuestra rendición de cuentas individual y en equipo</p></li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <div class="vision-cimarron">
+                <div class="descripcion-vision">
+                    <p>Ser uno de los 100 conglomerados más <br> importantes de México</p>
+                </div>
+                <div class="titulo-vision">
+                    <img src="../img/QuienesSomos/flecha blancaCapa_x0020_1.png" alt="flecha">
+                    <h1>VISIÓN <br> CIMARRÓN</h1>
+                </div>
+            </div>
+
+
+            <div class="mision-cimarron">
+                <div class="titulo-mision">
+                    <h1>MISIÓN <br> CIMARRÓN</h1>
+                    <img src="../img/QuienesSomos/flecha blancaCapa_x0020_1.png" alt="flecha">
                 </div>
 
-                <div class="vision-cimarron col-md-12">
-                    <div class="row">
-                        <div class="col-md-6 descripcion-vision d-flex justify-content-end align-items-center">
-                            <p class="text-end">Ser uno de los 100 conglomerados más <br> importantes de México</p>
-                        </div>
-                        <div class="col-md-6 titulo-vision d-flex justify-content-start align-items-center">
-                            <img src="../img/QuienesSomos/flecha al revezCapa_x0020_1.png" alt="flecha vision"
-                                class="flecha-adn mx-5">
-                            <p>VISIÓN <br> CIMARRÓN</p>
-                        </div>
-                    </div>
+                <div class="descripcion-mision">
+                    <p>Convertir retos complejos en oportunidades <br> rentables</p>
                 </div>
+                
+            </div>
 
-                <div class="mision-cimarron col-md-12">
-                    <div class="row">
-                        <div class="col-md-6 titulo-mision d-flex justify-content-end align-items-center">
-                            <p class="text-end">MISIÓN <br> CIMARRÓN</p>
-                            <img src="../img/QuienesSomos/flecha blancaCapa_x0020_1.png" alt="flecha adn"
-                                class="flecha-adn mx-5">
-                        </div>
-                        <div class="col-md-6 descripcion-mision d-flex justify-content-start align-items-center">
-                            <p class="text-start mx-5">Convertir retos complejos en oportunidades <br> rentables</p>
-                        </div>
-                    </div>
+            <div class="manifiesto-cimarron">
+                <div class="descripcion-manifiesto">
+                    <p>Pasos firmes hacia la consolidación</p>
                 </div>
-
-                <div class="manifiesto col-md-12">
-                    <div class="row">
-                        <div class="col-md-6 descripcion-manifiesto d-flex justify-content-end align-items-center">
-                            <p class="text-end">Pasos firmes hacia la consolidación</p>
-                        </div>
-                        <div class="col-md-6 titulo-manifiesto d-flex justify-content-start align-items-center">
-                            <img src="../img/QuienesSomos/flecha al revezCapa_x0020_1.png" alt="flecha vision"
-                                class="flecha-adn mx-5">
-                            <p class="text-start">MANIFIESTO <br> 2024</p>
-                        </div>
-                    </div>
+                <div class="titulo-manifiesto">
+                    <img src="../img/QuienesSomos/flecha blancaCapa_x0020_1.png" alt="flecha">
+                    <h1>MANIFIESTO <br> 2024</h1>
                 </div>
+            </div>
+        </div>
 
-                <div class="val-venc col-md-12 ">
-                    <div class="row">
-                        <div class="valores-container col-md-6 d-flex justify-content-center align-items-center">
+        <div class="cuadros-colores-2">
 
-                            <div class="valores-title col-md-12 d-flex justify-content-center align-items-center">
-                                <p class="text-center">VALORES</p>
-                            </div>
-
-                        </div>
-
-                        <div class="vencidos-container col-md-6">
-                            <div class="row">
-                                <div class="vencidos-img col-md-6">
-                                    <div class="bg-primary">
-                                        <img src="../img/QuienesSomos/Capa_x0020_1@2x.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="texto-vencidos col-md-6 d-flex justify-content-center align-items-center">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <p>Nunca nos damos por <br> vencidos</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="valores">
+                <h1>VALORES</h1>
+            </div>
+            <div class="valores-valor">
+                <div class="imagen-valor">
+                    <img src="../img/QuienesSomos/escalera_melon.svg" alt="escalera melon">
                 </div>
-
-                <div class="trab-resp col-md-12 ">
-                    <div class="row">
-                        <div class="trabajamos-container col-md-6">
-                            <div class="row">
-
-                                <div class="texto-trabajamos col-md-6 d-flex justify-content-center align-items-center">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <p class="text-end">Trabajamos juntos hacia <br> una misma meta</p>
-                                    </div>
-                                </div>
-
-
-                                <div class="trabajamos-img col-md-6">
-                                    <div class="bg-primary">
-                                        <img src="../img/QuienesSomos/lunares.png" alt="lunares">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="respondemos-container col-md-6">
-                            <div class="row">
-
-                                <div
-                                    class="texto-respondemos col-md-6 d-flex justify-content-center align-items-center">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <p class="text-end">Respondemos con agilidad <br> a los cambios</p>
-                                    </div>
-                                </div>
-
-
-                                <div class="respondemos-img col-md-6">
-                                    <div class="bg-primary">
-                                        <img src="../img/QuienesSomos/Capa_x0020_1.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="descripcion-valor">
+                    <p>Nunca nos damos por <br> vencidos</p>
                 </div>
-
-                <div class="act-juga col-md-12 ">
-                    <div class="row">
-                        <div class="actuamos-container col-md-6">
-                            <div class="row">
-
-                                <div class="actuamos-img col-md-6">
-                                    <div class="bg-primary">
-                                        <img src="../img/QuienesSomos/escalera azul.png" alt="lunares"
-                                            class="img-fluid">
-                                    </div>
-                                </div>
+            </div>
 
 
-                                <div class="texto-actuamos col-md-6 d-flex justify-content-center align-items-center">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <p class="text-start">Actuamos sin miedo</p>
-                                    </div>
-                                </div>
+            <div class="trabajamos">
+                <div class="texto-trabajamos"><p>Trabajamos juntos hacia <br> una misma meta</p></div>
+                <div class="img-trabajamos"><img src="../img/QuienesSomos/lunares.png" alt="lunares"></div>
+            </div>
 
-                            </div>
-                        </div>
-
-                        <div class="jugamos-container col-md-6">
-                            <div class="row">
-                                <div class="jugamos-img col-md-6">
-                                    <div class="bg-primary">
-                                        <img src="../img/QuienesSomos/piramide.png" alt="alt" class="img-fluid">
-                                    </div>
-                                </div>
+            <div class="respondemos">
+                <div class="texto-respondemos"><p>Respondemos con agilidad <br> a los cambios</p></div>
+                <div class="img-respondemos"><img src="../img/QuienesSomos/Capa_x0020_1.png" alt="lunares"></div>
+            </div>
 
 
+            <div class="actuamos">
+                <div class="img-actuamos"><img src="../img/QuienesSomos/escalera azul.png" alt="lunares"></div>
+                <div class="texto-actuamos"><p>Actuamos sin miedo</p></div>
+            </div>
 
-                                <div class="texto-jugamos col-md-6 d-flex justify-content-center align-items-center">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <p class="text-end">Jugamos para ganar</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+            <div class="jugamos">
+                <div class="img-jugamos"><img src="../img/QuienesSomos/piramide.png" alt="lunares"></div>
+                <div class="texto-jugamos"><p>Jugamos para ganar</p></div>
             </div>
 
 
 
-        </section>
 
-
-
+        </div>
 
         <footer class="footer">
             <div class="footer-cimarron">
@@ -294,6 +246,7 @@
                     <a href="#"><img src="../img/Footer/twitter.svg" alt="twitter"></a>
                     <a href="#"><img src="../img/Footer/whatsapp.svg" alt="whatsapp"></a>
                 </div>
+                <div class="footer-triangulo"><img src="../img/Footer/cima.svg" alt="cima"></div>
             </div>
             <div class="certificaciones">
                 <div class="certif-titulo">
@@ -338,7 +291,7 @@
             </div>
         </div>
     </div>
-    <script src="../javascript/index.js"></script>
+    <script src="../javascript/navbar.js"></script>
 </body>
 
 </html>

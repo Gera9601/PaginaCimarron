@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Division salud</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/division-salud.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/servicio_al_cliente.css">
     <link rel="stylesheet" href="../styles/navbar.css">
-
+    <title>Servicio al cliente</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             <li class="lista-texto"><a href="#">NOSOTROS</a>
                 <ul class="menu-vertical">
                     <a href="#"><li>NUESTRA HISTORIA</li></a>
-                    <a href="quienes_somos.html"><li>¿QUIENES SOMOS?</li></a>
+                        <a href="quienes_somos.html"><li>¿QUIENES SOMOS?</li></a>
                     <a href="estrategia_corporativa.html"><li>ESTRATEGIA CORPORATIVA</li></a>
                     <a href="#"><li>LIDERAZGO</li></a>
                 </ul>
@@ -56,8 +56,8 @@
             <a href="#"><li class="lista-texto"><a href="vacantes.html">¡TRABAJA CON NOSOTROS!</a></li>
             <li class="lista-texto"><a href="#">CONTACTO</a>
                 <ul class="menu-vertical">
-                    <a href="servicio_al_cliente.html"><li>SERVICIO AL CLIENTE</li></a>
-                    <a href="#"><li>PROVEEDORES</li></a>
+                    <a href="#"><li>SERVICIO AL CLIENTE</li></a>
+                    <a href="proveedores.html"><li>PROVEEDORES</li></a>
                 </ul>
             </li>
         </ul>
@@ -72,41 +72,57 @@
             </ul>
         </div>
     </nav>
-    <div class="contenedor">
-        <div class="salud-container">
-            <div class="img-silla">
-                <img src="../img/divisiones/salud/silal.png" alt="silla">
+    <div class="container">
+        <div class="serv-cliente-section">
+            <div class="serv-cliente-text">
+                <h1>SERVICIO <strong>AL CLIENTE</strong></h1>
+                <div class="texto-cliente">
+                    <div class="division-texto-cliente">
+                        <p>
+                           <b>Corporativo Delicias</b> <br>
+                           Avenida Libramiento Delicias <br>
+                           #701 Ote <br>
+                           Oriente 1 C.P. 33029 <br>
+                           Delicias, Chih, México <br>
+                           800 900 9050
+                        </p>
+                    </div>
+                    <div class="division-texto-cliente-2">
+                        <p>
+                            <b>Corporativo Chihuahua</b> <br>
+                            Periférico de la juventud #3106 <br>
+                            Haciendas Santa Fe C.P. 31215 <br>
+                            Chihuahua, Chih, México <br>
+                            800 967 4284 Ext. 856 <br>
+                         </p>
+                    </div>
+                </div>
+                <div class="correo-cliente">
+                    <p>servicioalcliente@proyectoscimarron.com</p>
+                </div>
             </div>
-            <div class="img-guantes">
-                <img src="../img/divisiones/salud/guantes.png" alt="guantes">
-            </div>
-            <div class="descripcion-salud">
-                <h1>DIVISIÓN <b>SALUD</b></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur odio error sequi illum
-                    laudantium est exercitationem pariatur minus ipsa quae magnam neque, dolorem doloribus dolores
-                    repudiandae commodi blanditiis facilis. <br> <br> Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Obcaecati odit in eaque perferendis! Fugiat voluptatibus saepe fuga similique eos
-                    accusamus molestias inventore nulla nemo hic iste commodi, distinctio reiciendis enim!</p>
-            </div>
-        </div>
+            <div class="cliente-form">
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
 
-        <div class="salud-container-segundo">
-            <div class="collarin-img">
-                <img src="../img/divisiones/salud/collarin.png" alt="collarin">
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" id="mensaje" name="mensaje">
+
+                    <div class="caja-boton">
+                        <button type="submit">Enviar</button>
+                    </div>
+                    
+                </form>
             </div>
-            <div class="reposapies-img">
-                <img src="../img/divisiones/salud/reposapies.png" alt="reposapies">
+            <div class="decoracion-cliente">
+                <img src="../img/QuienesSomos/flecha_arribaCapa_x0020_1.png" alt="flecha arriba">
             </div>
-            <div class="descripcion-salud-segundo">
-                <p>Asumimos el reto, ofreciendo un servicio de calidad en todas las etapas del proceso, gracias a
-                    nuestro amplio inventario y extensa red de logistica. Nuestros productos están disponibles los 365
-                    días del año, las 24 horas del día para atender las necesidades de nuestros clientes. <br> <br>
-                    Actualmente estamos ubicados en Yucatán, Chihuahua y Durango, pero continuamos expandiéndonos a
-                    nuevos mercados, priorizando la venta en linea y el sector privado, con el compromiso y calidad que
-                    nos caracteriza.</p>
-            </div>
-            <div class="figuras-img">
-                <img src="../img/divisiones/Alimentos/figuras.png" alt="figuras">
+            <div class="decoracion-cliente-verde">
+                <img src="../img/Proveedores/flecha_verde_abajo.svg" alt="flecha abajo verde">
             </div>
         </div>
         <footer class="footer">
@@ -169,8 +185,6 @@
                 <p>Aviso de privacidad | Términos y condiciones</p>
             </div>
         </div>
-    </div>
-    
     </div>
     <script src="../javascript/navbar.js"></script>
 </body>

@@ -1744,6 +1744,10 @@ nav ul li .menu-vertical li:hover {
         grid-gap: 20px; /* Añade un espaciado entre las filas */
         padding: 0 !important;
     }
+
+    .titulo-mobile-hacemos p {
+        font-size: 0.8rem;
+    }
     
     .grid-content {
         grid-area: cuadricula;

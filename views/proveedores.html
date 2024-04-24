@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Division salud</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/division-salud.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/proveedores.css">
     <link rel="stylesheet" href="../styles/navbar.css">
-
+    <title>Proveedores</title>
 </head>
 
 <body>
@@ -72,41 +72,46 @@
             </ul>
         </div>
     </nav>
-    <div class="contenedor">
-        <div class="salud-container">
-            <div class="img-silla">
-                <img src="../img/divisiones/salud/silal.png" alt="silla">
+    <div class="container">
+        <div class="proveedores-section">
+            <div class="proveedores-text">
+                <h1>PROVEEDORES</h1>
+                <div class="texto-proveedores">
+                    <p>
+                        ¡Hola! ¿Interesado en convertirte en proveedor de Grupo Cimarrón? Estamos atentos a tu información.<br><br>
+                        Si requerimos tus servicios, nos pondremos en contacto contigo para explorar futuras oportunidades de colaboración. Si no es en esta ocasión, mantendremos tu información en cartera para futuras consideraciones. <br><br>
+                        ¡Gracias por compartirnos tus datos y por tu interés en ser parte de nuestra red de proveedores!
+                    </p>
+                </div>
+                <div class="correo-proveedores">
+                    <p>servicioalcliente@proyectoscimarron.com</p>
+                </div>
             </div>
-            <div class="img-guantes">
-                <img src="../img/divisiones/salud/guantes.png" alt="guantes">
-            </div>
-            <div class="descripcion-salud">
-                <h1>DIVISIÓN <b>SALUD</b></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur odio error sequi illum
-                    laudantium est exercitationem pariatur minus ipsa quae magnam neque, dolorem doloribus dolores
-                    repudiandae commodi blanditiis facilis. <br> <br> Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Obcaecati odit in eaque perferendis! Fugiat voluptatibus saepe fuga similique eos
-                    accusamus molestias inventore nulla nemo hic iste commodi, distinctio reiciendis enim!</p>
-            </div>
-        </div>
+            <div class="proveedores-form">
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
 
-        <div class="salud-container-segundo">
-            <div class="collarin-img">
-                <img src="../img/divisiones/salud/collarin.png" alt="collarin">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa">
+
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" id="mensaje" name="mensaje">
+
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <div class="reposapies-img">
-                <img src="../img/divisiones/salud/reposapies.png" alt="reposapies">
+            <div class="decoracion-proveedores">
+                <img src="../img/QuienesSomos/flecha_arribaCapa_x0020_1.png" alt="flecha arriba">
             </div>
-            <div class="descripcion-salud-segundo">
-                <p>Asumimos el reto, ofreciendo un servicio de calidad en todas las etapas del proceso, gracias a
-                    nuestro amplio inventario y extensa red de logistica. Nuestros productos están disponibles los 365
-                    días del año, las 24 horas del día para atender las necesidades de nuestros clientes. <br> <br>
-                    Actualmente estamos ubicados en Yucatán, Chihuahua y Durango, pero continuamos expandiéndonos a
-                    nuevos mercados, priorizando la venta en linea y el sector privado, con el compromiso y calidad que
-                    nos caracteriza.</p>
-            </div>
-            <div class="figuras-img">
-                <img src="../img/divisiones/Alimentos/figuras.png" alt="figuras">
+            <div class="decoracion-proveedores-verde">
+                <img src="../img/Proveedores/flecha_verde_abajo.svg" alt="flecha abajo verde">
             </div>
         </div>
         <footer class="footer">
@@ -169,8 +174,6 @@
                 <p>Aviso de privacidad | Términos y condiciones</p>
             </div>
         </div>
-    </div>
-    
     </div>
     <script src="../javascript/navbar.js"></script>
 </body>

@@ -6,10 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/vacantes.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <title>¡Trabaja con nosotros!</title>
 </head>
 
 <body>
+    <nav class="barra-navegacion" id="navbar">
+        <div class="logo-mobile">
+            <img src="../img/Logo/gc_logo.svg" alt="logo">
+        </div>
+        <div class="menu-hamburguesa">
+            <button class="hamburguesa-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <ul class="menu-horizontal">
+            <li class="lista-texto"><a href="#">NOSOTROS</a>
+                <ul class="menu-vertical">
+                    <a href="#"><li>NUESTRA HISTORIA</li></a>
+                    <a href="quienes_somos.html"><li>¿QUIENES SOMOS?</li></a>
+                    <a href="estrategia_corporativa.html"><li>ESTRATEGIA CORPORATIVA</li></a>
+                    <a href="#"><li>LIDERAZGO</li></a>
+                </ul>
+            </li>
+            <li class="lista-texto"><a href="#">DIVISIONES</a>
+                <ul class="menu-vertical">
+                    <a href="#"><li>RETAIL</li></a>
+                    <a href="division_alimentos.html"><li>ALIMENTOS</li></a>
+                    <a href="division-salud.html"><li>SALUD</li></a>
+                    <a href="division-seguridad.html"><li>SEGURIDAD</li></a>
+                    <a href="#"><li>TECNOLOGÍA</li></a>
+                    <a href="#"><li>ESCOLAR</li></a>
+                </ul>
+            </li>
+            <li class="lista-texto"><a href="#">PRODUCTOS</a>
+
+                <ul class="menu-vertical">
+                    <a href="#"><li>CIMARRÓN.SHOP</li></a>
+                    <a href="#"><li>SOTOL CUERNOS</li></a>
+                    <a href="#"><li>MAYOREO</li></a>
+                </ul>
+            </li>
+            <li><a href="../index.html"><img src="../img/Logo/gc_logo.svg" alt="Logo Cimarrón"></a></li>
+            <a href="#"><li class="lista-texto">FUNDACIÓN</a></li>
+            <a href="#"><li class="lista-texto"><a href="vacantes.html">¡TRABAJA CON NOSOTROS!</a></li>
+            <li class="lista-texto"><a href="#">CONTACTO</a>
+                <ul class="menu-vertical">
+                    <a href="servicio_al_cliente.html"><li>SERVICIO AL CLIENTE</li></a>
+                    <a href="#"><li>PROVEEDORES</li></a>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="menu-hamburguesa-responsive">
+            <ul class="menu-vertical-responsive">
+                <li>NOSOTROS</li>
+                <li>DIVISIONES</li>
+                <li>PRODUCTOS</li>
+                <li>VACANTES</li>
+                <li>CONTACTO</li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <div class="grid-vacantes">
             <div class="titulo-vacantes">
@@ -34,6 +95,66 @@
             </div>
             <div class="triangulo-melon">
                 <img src="../img/vacantes/triangle_melon.svg" alt="triangulo melon">
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-cimarron">
+                <div class="footer-logo"><img src="../img/Logo/gc_logo.svg" alt="logo_cimarrón"></div>
+                <div class="desc-footer">
+                    <p>En Grupo Cimarrón brindamos valor a cada uno de nuestros clientes, a través de soluciones
+                        personalizadas en nuestras distintas divisiones, orientadas al sector público y privado.
+                        <br><br> Líder en México en la industria alimenticia con más de 37 años de experiencia.
+                    </p>
+                </div>
+                <div class="redes-sociales-footer">
+                    <a href="#"><img src="../img/Footer/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="../img/Footer/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="../img/Footer/linkedin.svg" alt="linkedin"></a>
+                    <a href="#"><img src="../img/Footer/twitter.svg" alt="twitter"></a>
+                    <a href="#"><img src="../img/Footer/whatsapp.svg" alt="whatsapp"></a>
+                </div>
+                <div class="footer-triangulo"><img src="../img/Footer/cima.svg" alt="cima"></div>
+            </div>
+            <div class="certificaciones">
+                <div class="certif-titulo">
+                    <p><b>CERTIFICACIONES</b></p>
+                </div>
+                <div class="certif-img">
+                    <img src="../img/Footer/Certificacion01.svg" alt="certificacion">
+                    <img src="../img/Footer/certificacion02.svg" alt="certificacion">
+                    <img src="../img/Footer/certificacion03.svg" alt="certificacion">
+                    <img src="../img/Footer/certificacion04.svg" alt="certificacion">
+                    <img src="../img/Footer/certificacion05.svg" alt="certificacion">
+                    <img src="../img/Footer/certificacion06.svg" alt="certificacion">
+                    <img src="../img/Footer/certificacion07.svg" alt="certificacion">
+                    <img src="../img/Footer/certificacion08.svg" alt="certificacion">
+                    <img src="../img/Footer/certificacion09.svg" alt="certificacion">
+                </div>
+
+            </div>
+            <div class="enlaces">
+                <div class="enlaces-titulo">
+                    <p><b>ENLACES</b></p>
+                </div>
+                <div class="enlaces-enlaces">
+                    <a href="">Noticias</a>
+                    <a href="">cimarron.shop</a>
+                    <a href="">Facturación Placita Cimarrón</a>
+                    <a href="">Facturación Borreguito</a>
+                    <a href="">Quejas y sugerencias</a>
+                    <a href="">Bolsas de Trabajo</a>
+                    <a href="">Contacto</a>
+                </div>
+                <div class="enlaces-triangulo"><img src="../img/Footer/cima.svg" alt="cima"></div>
+            </div>
+
+        </footer>
+        <div class="pie-pagina">
+            <div class="pie-copy">
+                <p>Todos los derechos reservados &copy; <span id="año"></span> Grupo Cimarrón</p>
+            </div>
+            <div class="pie-aviso">
+                <p>Aviso de privacidad | Términos y condiciones</p>
             </div>
         </div>
     </div>

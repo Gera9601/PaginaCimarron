@@ -22,6 +22,7 @@
     padding-left: 40px;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 1%;
 }
 
 .barra-navegacion ul .lista-texto {
@@ -38,7 +39,7 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 .barra-navegacion ul .lista-texto:hover {
@@ -91,6 +92,10 @@ nav .menu-vertical li:not(:first-child) {
 nav ul li .menu-vertical li:hover {
     border-left: 10px solid #A37535;
 
+}
+
+nav ul li .menu-vertical a{
+    margin-bottom: 5px;
 }
 
 .menu-hamburguesa {
@@ -157,6 +162,7 @@ nav ul li .menu-vertical li:hover {
     .menu-hamburguesa-responsive {
         display: block;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        background-color: #eaeaea6c;;
     }
 
     .menu-horizontal {
@@ -192,7 +198,7 @@ nav ul li .menu-vertical li:hover {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #EAEAEA;
+        background-color: #eaeaea6c;
         z-index: 9999;
     }
 
@@ -249,7 +255,7 @@ nav ul li .menu-vertical li:hover {
         right: -300px; /* Empieza fuera de la pantalla */
         width: 300px;
         height: 100vh;
-        background-color: rgba(234, 234, 234, 0.95); /* Color de fondo con opacidad */
+        background-color: rgba(234, 234, 234, 0.75); /* Color de fondo con opacidad */
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1); /* Sombra al lado derecho */
         z-index: 1000;
         transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
