@@ -21,6 +21,33 @@ body ol{
 .imagen-portada{
     grid-area: portada;
     width: 100%;
+    position: relative;
+}
+.quienes-somos{
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.destacado {
+    color: white;
+    font-weight: bold;
+    font-family: "GraphikBold";
+}
+.quienes-somos h1{
+    color: #A37535;
+}
+
+.triangulo-cremita{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.triangulo-cremita img{
+    width: 80% !important;
 }
 
 .descripcion-portada{
