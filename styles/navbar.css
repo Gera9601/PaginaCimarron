@@ -249,6 +249,7 @@ nav ul li .menu-vertical a{
     .menu-vertical-mobile.open {
         display: block; /* Mostrar el submenú */
         max-height: 2000px; /* Altura máxima suficientemente grande para mostrar todo el contenido */
+        margin-top: 8% !important;
     }
     
     .menu-vertical-mobile > a > li {
