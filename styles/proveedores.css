@@ -100,12 +100,19 @@
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
-    width: 50%;
+    width: 30%;
+    height: 60%;
     margin-top: 5%;
 }
 
 .proveedores-form button:hover {
     background-color: #0056b3;
+}
+
+.caja-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 950px) {

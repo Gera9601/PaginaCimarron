@@ -15,7 +15,7 @@ body ol{
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "portada portada portada portada portada"
     "descripcion descripcion descripcion decoracion decoracion";
-    margin-top: 8%;
+    margin-top: 6%;
 }
 
 .imagen-portada{

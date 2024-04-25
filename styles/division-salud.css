@@ -54,6 +54,8 @@ body{
 }
 .descripcion-salud h1{
     margin-bottom: 2%;
+    font-size: clamp(2rem, 3vw, 4rem) !important;
+    font-family: "GraphikLighter";
 }
 
 

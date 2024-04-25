@@ -18,11 +18,11 @@
     display: flex;
     list-style: none;
     text-decoration: none;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 1%;
+    padding-bottom: 0.5%;
 }
 
 .barra-navegacion ul .lista-texto {

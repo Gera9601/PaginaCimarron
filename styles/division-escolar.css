@@ -9,7 +9,7 @@ body{
     background-color: white;
     overflow: hidden;
 }
-.alimentos-container{
+.escolar-container{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 20%);
@@ -19,50 +19,47 @@ body{
     margin-top: 7%;
 }
 
-.img-nina{
+.img-utiles{
     grid-area: silla;
     overflow: hidden;
 }
 
-.img-nina img{
-    width: 100%;
-    height: 100%;
+.img-utiles img{
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: 100%; /* Mantiene la proporción de aspecto de la imagen */
+    display: block;
 }
 
-.img-productos{
+.img-cuadernos{
     grid-area: guantes;
     overflow: hidden;
-    position: relative;
 }
 
-.img-productos img{
-    width: 180%;            /* Ancho de la imagen al 100% del contenedor */
-    height: auto;           /* Mantiene la proporción de aspecto de la imagen */
-    position: absolute;     /* Posiciona la imagen de forma absoluta dentro del contenedor */
-    top: 50%;               /* Centra verticalmente la imagen */
-    left: 50%;              /* Centra horizontalmente la imagen */
-    transform: translate(-50%, -50%); /* Centra exactamente la imagen en el centro */
-    object-fit: cover;      /* Escala la imagen para que cubra todo el contenedor */
-    object-position: 25% 50%;
+.img-cuadernos img{
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: 100%; /* Mantiene la proporción de aspecto de la imagen */
+    display: block;
+
 }
 
-.descripcion-alimentos{
+.descripcion-escolar{
     grid-area: descripcion;
     display: flex;
     justify-content: center;
     align-items:start;
     flex-direction: column;
-    background-color: #EFB129;
+    background-color: #243683;
     padding: 5%;
     color: white;
 }
-.descripcion-alimentos h1{
-    color: white;
-    margin-bottom: 3%;
+.descripcion-escolar h1{
+    margin-bottom: 2%;
+    font-size: clamp(2rem, 3vw, 4rem) !important;
+    font-family: "GraphikLighter";
 }
 
 
-.alimentos-container-segundo{
+.escolar-container-segundo{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -73,30 +70,31 @@ body{
 
 }
 
-.mochila-img{
+.rojos-img{
     grid-area: collarin;
     overflow: hidden;
     position: relative;
 }
 
-.comiendo-img{
+.mochila-img{
     grid-area: reposapies;
     overflow: hidden;
     position: relative;
 }
 
-.descripcion-alimentos-segundo{
+.descripcion-escolar-segundo{
     grid-area: descripcion-2;
     overflow:hidden;
     padding: 10%;
     color:black;
 }
-.descripcion-alimentos h1{
+.descripcion-escolar h1{
     font-size: clamp(1rem, 2vw, 4rem);
+    color: white !important;
 }
 
-.descripcion-alimentos-segundo p,
-.descripcion-alimentos p{
+.descripcion-escolar-segundo p,
+.descripcion-escolar p{
     margin: 0 !important;
     font-size: clamp(1rem, 0.8vw, 4rem);
 }
@@ -106,9 +104,9 @@ body{
    
 }
 
-.mochila-img img{
-    width: 170%;            /* Ancho de la imagen al 100% del contenedor */
-    height: auto;           /* Mantiene la proporción de aspecto de la imagen */
+.rojos-img img{
+    width: 100%;            /* Ancho de la imagen al 100% del contenedor */
+    height: 100%;           /* Mantiene la proporción de aspecto de la imagen */
     position: absolute;     /* Posiciona la imagen de forma absoluta dentro del contenedor */
     top: 50%;               /* Centra verticalmente la imagen */
     left: 50%;              /* Centra horizontalmente la imagen */
@@ -116,7 +114,7 @@ body{
     object-fit: cover;      /* Escala la imagen para que cubra todo el contenedor */
     object-position: 25% 50%;
 }
-.comiendo-img img{
+.mochila-img img{
     width: 110%;            /* Ancho de la imagen al 100% del contenedor */
     height: 100%;           /* Mantiene la proporción de aspecto de la imagen */
     position: absolute;     /* Posiciona la imagen de forma absoluta dentro del contenedor */
@@ -137,18 +135,33 @@ body{
     font-family: "GraphikSemiBold";
 }
 
+@media (min-width: 1870px) {
+    .mochila-img img{
+        width: 120% !important;
+    }
+    .rojos-img img{
+        width: 110%;
+    }
+  }
 
 @media screen and (max-width: 1203px) {
 
-    .descripcion-alimentos
+    .descripcion-escolar
     {
         padding: 5%;
+    }
+    .mochila-img img{
+        position: absolute;
+    }
+    .descripcion-escolar h1{
+        margin-bottom: 3%;
+        font-size: clamp(2rem, 4vw, 5rem);
     }
 }
 
 @media screen and (max-width: 1097px) {
 
-    .alimentos-container{
+    .escolar-container{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -159,13 +172,13 @@ body{
        
     }
 
-    .descripcion-alimentos-segundo p,
-    .descripcion-alimentos p{
+    .descripcion-escolar-segundo p,
+    .descripcion-escolar p{
         margin: 0 !important;
         font-size: clamp(1rem, 2vw, 4rem);
         margin-top: 5%;
 }
-    .alimentos-container-segundo{
+    .escolar-container-segundo{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -177,25 +190,19 @@ body{
       
     }
 
-    .comiendo-img img{
-        width: 120%;
-    }
-
     .mochila-img img{
-        top: 66%;
+        width: 120% !important;
     }
 
-    .img-productos img{
-        width: 140%;
-        height: 100%;
-        position: relative;
+    .rojos-img img{
+        top: 50%;
     }
 
 }
 
 @media screen and (max-width: 740px) {
 
-    .alimentos-container{
+    .escolar-container{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -203,28 +210,29 @@ body{
         grid-template-areas: 
         "descripcion descripcion"
         "silla silla";
-        background-color: #EFB129;
+        background-color: #243683;
+        margin-top: 20%;
         /* mask-image: linear-gradient(
             black 90%,
             transparent
         ); */
     }
-    .img-productos{
+    .img-cuadernos{
         display: none;
     }
-    .img-nina{
+    .img-utiles{
         display: flex;
         justify-content: center;
         padding-bottom: 3%;
         
     }
 
-    .img-nina img{
+    .img-utiles img{
         width:50%;
        
     }
 
-    .alimentos-container-segundo{
+    .escolar-container-segundo{
         width: 100%;
         color: black;
         display: grid;
@@ -238,22 +246,28 @@ body{
     }
 
 
-    .mochila-img{
+    .rojos-img{
         display: none; /* Oculta la imagen de collarin */
     }
 
-    .comiendo-img img,
+    .mochila-img img,
     .figuras-img img{
         display: block; /* Muestra la imagen de figuras */
-        width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
-        height: auto; /* Mantiene la proporción de aspecto de la imagen */
+        width: 120%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+        height: 100%; /* Mantiene la proporción de aspecto de la imagen */
     }
 
-    .img-nina img{
+    .img-utiles img{
         mask-image: linear-gradient(
             black 70%,
             transparent
         );
         border-radius: 10px;
     }
+    .descripcion-escolar-segundo p,
+    .descripcion-escolar p{
+        margin: 0 !important;
+        font-size: clamp(0.8rem, 1vw, 2rem);
+        margin-top: 5%;
+}
 }

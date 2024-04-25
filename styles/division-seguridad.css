@@ -16,6 +16,7 @@ body{
     grid-template-areas: 
     "silla guantes descripcion descripcion descripcion";
     background-color: transparent;
+    margin-top: 7%;
 }
 
 .img-bomberos{
@@ -49,6 +50,12 @@ body{
     background-color: #EFB129;
     padding: 5%;
     color: white;
+}
+.descripcion-seguridad h1{
+    color: white;
+    margin-bottom: 3%;
+    font-size: clamp(2rem, 3vw, 4rem) !important;
+    font-family: "GraphikLighter";
 }
 
 
@@ -88,7 +95,7 @@ body{
 .descripcion-seguridad-segundo p,
 .descripcion-seguridad p{
     margin: 0 !important;
-    font-size: clamp(0.7rem, 0.8vw, 4rem);
+    font-size: clamp(1rem, 0.8vw, 4rem);
 }
 
 .figuras-img{
@@ -118,6 +125,13 @@ body{
 }
 .figuras-img img{
     height: 100%;
+    width: 100%;
+}
+
+.destacado{
+    color: white;         /* Color blanco */
+    font-weight: bold;
+    font-family: "GraphikSemiBold";
 }
 
 
@@ -168,6 +182,7 @@ body{
         top: 66%;
     }
 
+ 
 }
 
 @media screen and (max-width: 740px) {

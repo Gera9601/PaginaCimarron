@@ -4,121 +4,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>División Alimentos</title>
+    <title>Division salud</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/division-alimentos.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+
 </head>
 
 <body>
     <nav class="barra-navegacion" id="navbar">
+        <div class="logo-mobile">
+            <a href="../index.html"><img src="../img/Logo/gc_logo.svg" alt="logo"></a>
+        </div>
+        <div class="menu-hamburguesa">
+            <button class="hamburguesa-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
         <ul class="menu-horizontal">
             <li class="lista-texto"><a href="#">NOSOTROS</a>
                 <ul class="menu-vertical">
-                    <li><a href="#">NUESTRA HISTORIA</a></li>
-                    <li><a href="views/quienes_somos.html">¿QUIENES SOMOS?</a></li>
-                    <li><a href="views/estrategia_corporativa.html">ESTRATEGIA CORPORATIVA</a></li>
-                    <li><a href="#">LIDERAZGO</a></li>
+                    <a href="#">
+                        <li>NUESTRA HISTORIA</li>
+                    </a>
+                    <a href="quienes_somos.html">
+                        <li>¿QUIENES SOMOS?</li>
+                    </a>
+                    <a href="estrategia_corporativa.html">
+                        <li>ESTRATEGIA CORPORATIVA</li>
+                    </a>
+                    <a href="#">
+                        <li>LIDERAZGO</li>
+                    </a>
                 </ul>
             </li>
             <li class="lista-texto"><a href="#">DIVISIONES</a>
                 <ul class="menu-vertical">
-                    <li><a href="#">RETAIL</a></li>
-                    <li><a href="views/division_alimentos.html">ALIMENTOS</a></li>
-                    <li><a href="views/division-salud.html">SALUD</a></li>
-                    <li><a href="views/division-seguridad.html">SEGURIDAD</a></li>
-                    <li><a href="#">TECNOLOGÍA</a></li>
-                    <li><a href="#">ESCOLAR</a></li>
+                    <a href="#">
+                        <li>RETAIL</li>
+                    </a>
+                    <a href="division_alimentos.html">
+                        <li>ALIMENTOS</li>
+                    </a>
+                    <a href="division-salud.html">
+                        <li>SALUD</li>
+                    </a>
+                    <a href="division-seguridad.html">
+                        <li>SEGURIDAD</li>
+                    </a>
+                    <a href="division_tecnologia.html">
+                        <li>TECNOLOGÍA</li>
+                    </a>
+                    <a href="division_escolar.html">
+                        <li>ESCOLAR</li>
+                    </a>
                 </ul>
             </li>
-            <li class="lista-texto"><a href="#">PRODUCTOS</a>
+            <li class="lista-texto"><a href="">CONFITERÍA Y BOTANAS</a>
+                <ul class="menu-vertical">
+                    <a href="#">
+                        <li>TRUFFINO</li>
+                    </a>
+                    <a href="#">
+                        <li>GALERIA</li>
+                    </a>
+                    <a href="https://cimarron.shop/">
+                        <li>CIMARRÓN.SHOP</li>
+                    </a>
+                    <a href="https://sotolcuernos.mx/">
+                        <li>SOTOL CUERNOS</li>
+                    </a>
+                </ul>
+            </li>
+            <li><a href="../index.html"><img src="../img/Logo/gc_logo.svg" alt="Logo Cimarrón"></a></li>
+            <a href="#">
+                <li class="lista-texto">FUNDACIÓN
+            </a></li>
+            <a href="#">
+                <li class="lista-texto"><a href="vacantes.html">¡TRABAJA CON NOSOTROS!
 
-                <ul class="menu-vertical">
-                    <li><a href="#">CIMARRÓN.SHOP</a></li>
-                    <li><a href="#">SOTOL CUERNOS</a></li>
-                    <li><a href="#">MAYOREO</a></li>
-                </ul>
-            </li>
-            <li><a href="#"><img src="../img/Logo/gc_logo.svg" alt="Logo Cimarrón"></a></li>
-            <li class="lista-texto"><a href="#">FUNDACIÓN</a></li>
-            <li class="lista-texto"><a href="views/vacantes.html">VACANTES</a></li>
-            <li class="lista-texto"><a href="#">CONTACTO</a>
-                <ul class="menu-vertical">
-                    <li><a href="#">NUESTRA HISTORIA</a></li>
-                    <li><a href="#">¿QUIENES SOMOS?</a></li>
-                    <li><a href="#">ESTRATEGIA CORPORATIVA</a></li>
-                    <li><a href="#">LIDERAZGO</a></li>
-                </ul>
-            </li>
+                    </a></li>
+                <li class="lista-texto"><a href="#">CONTACTO</a>
+                    <ul class="menu-vertical">
+                        <a href="servicio_al_cliente.html">
+                            <li>SERVICIO AL CLIENTE</li>
+                        </a>
+                        <a href="proveedores.html">
+                            <li>PROVEEDORES</li>
+                        </a>
+                    </ul>
+                </li>
         </ul>
-    </nav>
 
-    <div class="container">
-        <div class="alimentos-grid">
-            <div class="nina-img"><img src="../img/Divisiones/Alimentos/Copia de MENORES DE 5.png" alt="nina sonriendo">
+        <div class="menu-hamburguesa-responsive">
+            <ul class="menu-vertical-responsive">
+                <li>NOSOTROS
+                    <ul class="menu-vertical-mobile">
+                        <a href="#">
+                            <li>NUESTRA HISTORIA</li>
+                        </a>
+                        <a href="quienes_somos.html">
+                            <li>¿QUIENES SOMOS?</li>
+                        </a>
+                        <a href="estrategia_corporativa.html">
+                            <li>ESTRATEGIA CORPORATIVA</li>
+                        </a>
+                        <a href="#">
+                            <li>LIDERAZGO</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>DIVISIONES
+                    <ul class="menu-vertical-mobile">
+                        <a href="#">
+                            <li>RETAIL</li>
+                        </a>
+                        <a href="division_alimentos.html">
+                            <li>ALIMENTOS</li>
+                        </a>
+                        <a href="division-salud.html">
+                            <li>SALUD</li>
+                        </a>
+                        <a href="division-seguridad.html">
+                            <li>SEGURIDAD</li>
+                        </a>
+                        <a href="division_tecnologia.html">
+                            <li>TECNOLOGÍA</li>
+                        </a>
+                        <a href="division_escolar.html">
+                            <li>ESCOLAR</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>CONFITERÍA Y BOTANAS
+                    <ul class="menu-vertical-mobile">
+                        <a href="#">
+                            <li>TRUFFINO</li>
+                        </a>
+                        <a href="#">
+                            <li>GALERIA</li>
+                        </a>
+                        <a href="https://cimarron.shop/" target="_blank">
+                            <li>CIMARRÓN.SHOP</li>
+                        </a>
+                        <a href="https://sotolcuernos.mx/" target="_blank">
+                            <li>SOTOL CUERNOS</li>
+                        </a>
+                    </ul>
+                </li>
+                <a href="#">
+                    <li>FUNDACIÓN</li>
+                </a>
+                <li>TRABAJA CON NOSOTROS</li>
+                <li>CONTACTO
+                    <ul class="menu-vertical-mobile">
+                        <a href="servicio_al_cliente.html">
+                            <li>SERVICIO AL CLIENTE</li>
+                        </a>
+                        <a href="proveedores.html">
+                            <li>PROVEEDORES</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contenedor">
+        <div class="alimentos-container">
+            <div class="img-nina">
+                <img src="../img/divisiones/Alimentos/Copia de MENORES DE 5.png" alt="niña">
             </div>
-            <div class="productos-img">
-                <img src="../img/Divisiones/Alimentos/CIMARRON 28SEP5958 (1).jpg" alt="" class="custom-image">
+            <div class="img-productos">
+                <img src="../img/divisiones/Alimentos/CIMARRON 28SEP5958 (1).jpg" alt="productos">
             </div>
-            <div class="texto-alimentos d-flex justify-content-center align-items-start flex-column">
-                <h1>DIVISIÓN <b>ALIMENTOS</b></h1>
+            <div class="descripcion-alimentos">
+                <h1>DIVISIÓN <span class="destacado">ALIMENTOS</span></h1>
                 <p>Desde hace algunos años, el sector gubernamental ha implementado una serie de políticas públicas y
                     programas enfocados en reducir la brecha de desigualdad y mejorar la nutrición de los grupos
                     vulnerables, a través de la entrega de despensas, desayunos calientes y fríos, así como comedores
-                    sociales. <br> <br>
-
-                    Sin embargo, las instituciones públicas han visto menguados sus esfuerzos, por la falta de calidad
-                    en los productos y la merma que ocasiona, su corta vida de anaquel.
-                </p>
+                    sociales. <br> <br> Sin embargo, las instituciones públicas han visto menguados sus esfuerzos, por
+                    la falta de calidad en los productos y la merma que ocasiona, su corta vida de anaquel. </p>
             </div>
         </div>
 
-        <div class="alimentos-grid2">
-            <div class="mochila-productos">
-                <img src="../img/Divisiones/Alimentos/CIMARRON 28SEP5963 (1).jpg" alt="" class="custom-image">
+        <div class="alimentos-container-segundo">
+            <div class="mochila-img">
+                <img src="../img/divisiones/Alimentos/CIMARRON 28SEP5963 (1).jpg" alt="collarin">
             </div>
-            <div class="nina-comiendo">
-                <img src="../img/Divisiones/Alimentos/Copia de IMG_007-Programa de desayunos escolares fríos (1).jpeg"
-                    alt="">
+            <div class="comiendo-img">
+                <img src="../img/divisiones/Alimentos/Copia de IMG_007-Programa de desayunos escolares fríos (1).jpeg"
+                    alt="reposapies">
             </div>
-            <div class="texto-alimentos2 d-flex justify-content-center align-items-center">
+            <div class="descripcion-alimentos-segundo">
                 <p>En este sentido, la División de Alimentos de Grupo Cimarrón surge con una propuesta diferente en el
                     mercado: ofrecer productos de excelente calidad y alto valor nutrimental, colaborando con marcas de
                     prestigio nacional, con empaques especializados en la conservación de alimentos y que promueven el
-                    cuidado del medio ambiente. <br> <br>
-
-                    Consolidándose como una empresa líder en la distribución de despensas y desayunos escolares, por su
-                    amplia red de logística que le permite llegar a cualquier punto de México.
-                </p>
+                    cuidado del medio ambiente. <br> <br> Consolidándose como una empresa líder en la distribución de
+                    despensas y desayunos escolares, por su amplia red de logística que le permite llegar a cualquier
+                    punto de México.</p>
             </div>
-            <div class="figuras-alimentos">
-                <img src="../img/Divisiones/Alimentos/figuras.png" alt="">
+            <div class="figuras-img">
+                <img src="../img/divisiones/Alimentos/figuras.png" alt="figuras">
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <footer class="footer">
             <div class="footer-cimarron">
                 <div class="footer-logo"><img src="../img/Logo/gc_logo.svg" alt="logo_cimarrón"></div>
@@ -179,6 +270,8 @@
                 <p>Aviso de privacidad | Términos y condiciones</p>
             </div>
         </div>
+    </div>
+
     </div>
     <script src="../javascript/navbar.js"></script>
 </body>
