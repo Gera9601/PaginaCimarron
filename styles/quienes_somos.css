@@ -608,3 +608,39 @@ body ol{
         margin-top: 20%;
     }
 }
+
+@media screen and (max-width: 660px) {
+    .grid-portada{
+        margin-top: 10%;
+    }
+    .triangulo-cremita img{
+        width: 25% !important;
+    }
+    .quienes-somos h1{
+        font-size: clamp(1rem, 2vw, 3rem);
+    }
+    .texto-portada p{
+        font-size: clamp(0.8rem, 1vw, 2rem);
+    }
+    ol{
+        padding: 0% 6%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .grid-portada{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid-portada{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .grid-portada{
+        margin-top: 30%;
+    }
+}

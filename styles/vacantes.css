@@ -160,3 +160,27 @@ body{
     }
 
 }
+
+@media screen and (max-width: 660px) {
+    .grid-vacantes{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .grid-vacantes{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid-vacantes{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .grid-vacantes{
+        margin-top: 30%;
+    }
+}

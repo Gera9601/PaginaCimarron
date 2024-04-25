@@ -139,7 +139,7 @@
     .proveedores-text h1{
         margin-bottom: 50px;
         color: white !important;
-        font-size: clamp(1rem, 4vw, 4rem);
+        font-size: clamp(1.5rem, 4vw, 4rem);
         font-family: "GraphikBold";
     }
     
@@ -147,7 +147,7 @@
         margin-bottom: 10%;
         color: white !important;
         font-family: "GraphikLighter";
-        font-size: clamp(0.5rem, 2vw, 1.5rem);
+        font-size: clamp(0.8rem, 2vw, 1.5rem);
     }
 
     .correo-proveedores {
@@ -169,3 +169,26 @@
     }
 }
 
+@media screen and (max-width: 660px) {
+    .proveedores-section{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .proveedores-section{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .proveedores-section{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .proveedores-section{
+        margin-top: 30%;
+    }
+}

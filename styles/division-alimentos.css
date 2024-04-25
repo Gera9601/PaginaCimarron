@@ -52,13 +52,15 @@ body{
     justify-content: center;
     align-items:start;
     flex-direction: column;
-    background-color: #EFB129;
+    background-color:#29B16E;
     padding: 5%;
     color: white;
 }
 .descripcion-alimentos h1{
     color: white;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
+    font-size: clamp(2rem, 3vw, 4rem) !important;
+    font-family: "GraphikLighter";
 }
 
 
@@ -255,5 +257,29 @@ body{
             transparent
         );
         border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .alimentos-container{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .alimentos-container{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .alimentos-container{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .alimentos-container{
+        margin-top: 30%;
     }
 }

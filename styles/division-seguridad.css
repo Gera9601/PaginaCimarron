@@ -249,3 +249,26 @@ body{
         border-radius: 10px;
     }
 }
+@media screen and (max-width: 660px) {
+    .seguridad-container{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .seguridad-container{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .seguridad-container{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .seguridad-container{
+        margin-top: 30%;
+    }
+}

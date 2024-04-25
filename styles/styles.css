@@ -95,7 +95,7 @@ html, body {
     background-color: white;
     overflow: hidden;
     padding: 0 !important;
-   
+    min-width: 300px !important;
     
     /* Cambia el color de fondo según sea necesario */
 }
@@ -1990,6 +1990,15 @@ nav ul li .menu-vertical li:hover {
     
 }
 
+@media screen and (max-width: 660px) {
+    .slider {
+        position: relative;
+        overflow: hidden;
+        margin-top: 10%;
+    }
+    
+}
+
 @media screen and (max-width: 460px) {
     #prevBtn{
         left: 27%;
@@ -2010,6 +2019,12 @@ nav ul li .menu-vertical li:hover {
     }
     .desc-footer p {
         font-size: clamp(0.7rem, 1vw, 1rem) !important;
+    }
+
+    .slider {
+        position: relative;
+        overflow: hidden;
+        margin-top: 20%;
     }
 }
 

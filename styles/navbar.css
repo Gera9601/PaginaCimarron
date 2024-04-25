@@ -7,6 +7,13 @@
     z-index: 5;
     position: fixed;
     transition: top 1s;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .barra-navegacion.hidden {
@@ -215,10 +222,11 @@ nav ul li .menu-vertical a{
 
     .menu-vertical-responsive li {
         text-align: center;
-        padding: 1rem;
-        
+        padding: 2rem 0rem;
+        font-family: "GraphikBold";
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
+        padding-bottom: 1rem;
     }
 
     .menu-vertical-responsive li:last-child {
@@ -226,8 +234,45 @@ nav ul li .menu-vertical a{
     }
 
     .menu-vertical-responsive li:hover {
-        background-color: #D7CCBC;
+        background-color: transparent;
     }
+
+    .menu-vertical-mobile {
+        display: none; /* Inicialmente oculto */
+        width: 100%;
+        transition: max-height 0.3s ease-in-out; /* Transición suave */
+        overflow: hidden; /* Ocultar contenido que exceda el tamaño del elemento */
+        max-height: 0; /* Altura máxima inicial */
+        background-color: #D8CCBC;
+    }
+    
+    .menu-vertical-mobile.open {
+        display: block; /* Mostrar el submenú */
+        max-height: 2000px; /* Altura máxima suficientemente grande para mostrar todo el contenido */
+    }
+    
+    .menu-vertical-mobile > a > li {
+        display: block;
+        padding: 20px;
+        color: black;
+        font-family: "GraphikBold";
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    .menu-vertical-mobile > a > li:active{
+        background-color: #d8ae78;
+    }
+    .menu-vertical-mobile > a:first-child{
+        margin-top: 3%;
+    }
+    /* Mostrar el submenu cuando se pasa el mouse por encima del elemento padre */
+    .menu-vertical-responsive > li:hover .menu-vertical-mobile {
+        display: block;
+        background-color: #D8CCBC;
+        margin-top: 1rem;
+    }
+
 
     .hamburguesa-btn {
         background-color: transparent;
@@ -278,7 +323,7 @@ nav ul li .menu-vertical a{
 
     
     .menu-vertical-responsive li:hover {
-        background-color: #D7CCBC;
+        background-color: transparent;
     }
     
     .menu-hamburguesa-responsive.show {
@@ -302,6 +347,16 @@ nav ul li .menu-vertical a{
     
     .hamburguesa-btn.active .bar:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .menu-vertical-responsive > li:active{
+    background-color: transparent;
+}
+
+
+    .menu-vertical-responsive > li.open .menu-vertical-mobile {
+        display: block;
+        max-height: 500px; /* Un valor suficientemente grande para acomodar todos los elementos */
     }
 }
 

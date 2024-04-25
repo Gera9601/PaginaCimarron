@@ -197,4 +197,28 @@
 
 }
 
+@media screen and (max-width: 660px) {
+    .serv-cliente-section{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .serv-cliente-section{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .serv-cliente-section{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .serv-cliente-section{
+        margin-top: 30%;
+    }
+}
+
 

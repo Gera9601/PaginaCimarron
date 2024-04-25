@@ -251,3 +251,27 @@ body{
         border-radius: 10px;
     }
 }
+
+@media screen and (max-width: 660px) {
+    .salud-container{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .salud-container{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .salud-container{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .salud-container{
+        margin-top: 30%;
+    }
+}

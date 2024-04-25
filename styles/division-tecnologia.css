@@ -271,3 +271,26 @@ body{
         margin-top: 5%;
 }
 }
+@media screen and (max-width: 660px) {
+    .tecnologia-container{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .tecnologia-container{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tecnologia-container{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .tecnologia-container{
+        margin-top: 30%;
+    }
+}
