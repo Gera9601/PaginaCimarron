@@ -95,7 +95,7 @@ html, body {
     background-color: white;
     overflow: hidden;
     padding: 0 !important;
-    min-width: 300px !important;
+    min-width: 330px !important;
     
     /* Cambia el color de fondo según sea necesario */
 }
@@ -1591,6 +1591,17 @@ nav ul li .menu-vertical li:hover {
         display: block;
     }
 
+    .title-slide-confiteria h1:last-child,
+    .title-slide-confiteria h2{
+    display: block;
+
+}
+
+.title-slide-confiteria h1:first-child{
+    display: none;
+}
+
+
     .slide .title-slide-programas h1:first-child{
         display: none;
     }
@@ -1758,6 +1769,29 @@ nav ul li .menu-vertical li:hover {
         margin-bottom: 20%;
     }
 
+    .alimentos{
+        order: 2;
+    }
+
+    .alimentos-img{
+        order: 1;
+    }
+
+    .salud-img{
+        order: 2;
+    }
+
+    .salud{
+        order: 1;
+    }
+
+    .escolar{
+        order: 2;
+    }
+    
+    .escolar-img{
+        order: 1;
+    }
     .grid-title h2{
         font-size: clamp(1.2rem, 2vw, 3rem);
     }
@@ -1809,6 +1843,9 @@ nav ul li .menu-vertical li:hover {
         padding: 4%;
     }
 
+    .grid-crecemos .grid-crecemos-item h1 {
+        font-size: 8vw;
+    }
     .grid-crecemos-item-grande2-mobile{
         display: flex;
         grid-column-end: span 2;

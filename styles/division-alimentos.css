@@ -164,7 +164,7 @@ body{
     .descripcion-alimentos-segundo p,
     .descripcion-alimentos p{
         margin: 0 !important;
-        font-size: clamp(1rem, 2vw, 4rem);
+        font-size: clamp(0.8rem, 1vw, 2rem) !important;
         margin-top: 5%;
 }
     .alimentos-container-segundo{
@@ -205,7 +205,7 @@ body{
         grid-template-areas: 
         "descripcion descripcion"
         "silla silla";
-        background-color: #EFB129;
+        background-color: #29B16E;
         /* mask-image: linear-gradient(
             black 90%,
             transparent

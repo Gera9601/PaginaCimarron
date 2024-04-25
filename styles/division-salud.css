@@ -162,7 +162,7 @@ body{
     .descripcion-salud-segundo p,
     .descripcion-salud p{
         margin: 0 !important;
-        font-size: clamp(1rem, 2vw, 4rem);
+        font-size: clamp(0.8rem, 1vw, 2rem) !important;
         margin-top: 5%;
 }
     .salud-container-segundo{
