@@ -605,13 +605,18 @@ body ol{
         grid-template-rows: repeat(2, auto);
         grid-template-areas: "portada"
         "descripcion";
-        margin-top: 20%;
+        margin-top: 9%;
+    }
+
+    .descripcion-portada{
+        background-color: #A37535;
+        opacity: 0.8;
     }
 }
 
 @media screen and (max-width: 660px) {
     .grid-portada{
-        margin-top: 10%;
+        margin-top: 15%;
     }
     .triangulo-cremita img{
         width: 25% !important;
