@@ -129,7 +129,7 @@ nav ul li .menu-vertical a{
     }
 
     .barra-navegacion ul .lista-texto a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .barra-navegacion ul .lista-texto {
@@ -139,11 +139,7 @@ nav ul li .menu-vertical a{
 
 }
 
-@media screen and (max-width: 1101px) {
-    .menu-horizontal{
-        font-size: 0.8rem;
-    }
-}
+
 
 
 @media screen and (max-width: 950px) {
