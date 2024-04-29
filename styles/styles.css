@@ -804,7 +804,7 @@ nav ul li .menu-vertical li:hover {
     text-align: start;
     padding-left: 7%;
     font-family: "GraphikLighter";
-    font-size: clamp(0.6vw, 0.6vw, 0.8vw);
+    font-size: clamp(0.8rem, 0.7vw, 1rem);
 }
 
 .grid-item .grid-img div img {
