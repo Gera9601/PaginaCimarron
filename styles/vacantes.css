@@ -149,7 +149,8 @@ body{
         flex-direction: column;
     }
     .green-button{
-        font-size: clamp(0.5rem, 1vw, 3rem);
+        font-size: clamp(0.7rem, 1vw, 3rem);
+        padding: 8px 32px;
     }
 
     .green-button:first-child{
@@ -165,11 +166,35 @@ body{
     .grid-vacantes{
         margin-top: 10%;
     }
+
+    .triangulo-melon{
+        position: absolute;
+        bottom: 33%;
+        right: 20%;
+    }
+    .triangulo-verde{
+        position: absolute;
+        top: 1%;
+        right: 20%;
+    }
 }
 
 @media screen and (max-width: 560px) {
     .grid-vacantes{
         margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .triangulo-melon{
+        position: absolute;
+        bottom: 33%;
+        right: 10%;
+    }
+    .triangulo-verde{
+        position: absolute;
+        top: 1%;
+        right: 10%;
     }
 }
 
