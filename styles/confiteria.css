@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.destacado{
+    color: white;         /* Color blanco */
+    font-weight: bold;
+    font-family: "GraphikSemiBold";
+}
+
+.destacado-naranja{
+    color: #FA9226;         /* Color blanco */
+    font-weight: bold;
+    font-family: "GraphikSemiBold";
+}
+
+.confit-botanas{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    margin-top: 6%;
+}
+.formulario-confit{
+    padding: 10% 5%;
+    position: relative;
+}
+
+.confit-decoracion{
+    position: absolute;
+    right: 10%;
+    bottom: 18%;
+}
+
+.confit-decoracion img{
+    width: 190%;
+}
+
+.titulo-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.titulo-formulario h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #FA9226;
+    font-weight: 500;
+}
+
+.datos-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.datos-contacto p{
+    text-align: center;
+    color: #A37535;
+    font-weight: 900;
+    font-family: "GraphikSemiBold";
+}
+
+
+.formulario-confit form{
+    display: grid;
+    gap: 10px;
+ 
+}
+
+.formulario-confit label{
+    font-family: "GraphikSemibold";
+}
+
+.formulario-confit input[type="text"],
+.formulario-confit input[type="email"],
+.formulario-confit input[type="tel"],
+.formulario-confit textarea{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.formulario-confit button{
+    background-color: #FA9226;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 30%;
+    height: 60%;
+    margin-top: 5%;
+}
+
+.formulario-confit button:hover {
+    background-color: #FBA851;
+}
+
+.caja-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-confit{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    padding: 10% 5%;
+    background: linear-gradient(to top, #FFF5EF 20%, #A37535 20%);
+    position: relative;
+}
+
+.texto-confit h1{
+    margin-bottom: 10%;
+    font-family: "GraphikRegular";
+    color: white;
+    font-weight: 600;
+}
+
+.texto-confit p{
+    text-align: end;
+    color: white;
+    font-family: "GraphikLighter";
+    
+}
+
+.catalogo-button{
+    margin-top: 5%;
+}
+
+.texto-confit .catalogo-button button{
+    background-color: #FA9226;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 65px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.texto-confit .catalogo-button button:hover {
+    background-color: #FBA851;
+}
+
+.descripcion-confit{
+    width: 85%;
+}
+
+.decoracion-amarilla,
+.decoracion-naranja{
+    position: absolute;
+}
+.decoracion-amarilla{
+    left: 22%;
+    bottom: 40%;
+}
+.decoracion-amarilla img{
+    width: 70%;
+}
+
+.decoracion-naranja{
+    left: 6%;
+    bottom: 55%;
+}
+
+.decoracion-naranja img{
+    rotate: 180deg;
+    width: 200%;
+}
+
+
+/* grid confiteria */
+.grid-confiteria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 3% 3%;
+    padding: 5%;
+}
+.grid-item-verde{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 15% 10%;
+    background-color:#29B16E;
+    color: white;
+}
+.grid-item-azul{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 15% 10%;
+    background-color:#5284FB;
+    color: white;
+}
+
+.titulo-grid-confit-azul h1{
+    color: #5284FB;
+}
+.titulo-grid-confit-azul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-grid-confit-azul p{
+    text-align: start;
+}
+.titulo-grid-confit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-grid-confit h1{
+    color: #29B16E;
+}
+
+.titulo-grid-confit-rosa h1{
+    color: #FC52BE;
+}
+
+.titulo-grid-confit-rosa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-item-rosa{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 15% 10%;
+    background-color:#FC52BE;
+    color: white;
+}
+
+.grid-item-salmon{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 15% 10%;
+    background-color:#FD8D77;
+    color: white;
+}
+.titulo-grid-confit-salmon h1{
+    color: #FD8D77;
+}
+.titulo-grid-confit-salmon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 950px) {
+    .grid-confiteria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 3% 3%;
+        padding: 5%;
+    }
+}

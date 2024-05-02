@@ -261,7 +261,7 @@ nav ul li .menu-vertical a{
         margin-top: 8% !important;
     }
     
-    .menu-vertical-mobile > a > li {
+    .menu-vertical-mobile > li > a {
         display: block;
         padding: 20px;
         color: black;
@@ -380,6 +380,34 @@ nav ul li .menu-vertical a{
         max-height: 500px; /* Altura máxima suficientemente grande para mostrar todo el contenido */
         display: block;
     }
+
+    .menu-vertical-responsive > li,
+    .menu-vertical-responsive > li >a{
+        font-family: 'GraphikBold' !important;
+    }
+
+    .menu-vertical-mobile > li {
+        display: block;
+        padding: 20px;
+        color: black;
+        font-family: "GraphikBold";
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    .menu-vertical-mobile li a{
+        padding: 0;
+    }
+    
+    .submenu-segundo li a{
+        text-align: center;
+        padding: 0rem 0rem;
+        font-family: "GraphikRegular";
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        padding-bottom: 1rem;
+    }
+
 }
 
 
