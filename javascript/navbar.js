@@ -12,6 +12,26 @@ document.addEventListener('DOMContentLoaded', () => {
         menuVertical.classList.toggle("show");
     });
 
+    const menuItems2 = document.querySelectorAll('.menu-vertical-mobile li.has-submenu');
+
+    menuItems2.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.stopPropagation(); // Detiene la propagación del evento clic
+
+            const submenu = item.querySelector('.submenu-segundo');
+
+            // Cerrar todos los submenús segundos
+            document.querySelectorAll('.submenu-segundo').forEach(s => {
+                if (s !== submenu && s.classList.contains('open')) {
+                    s.classList.remove('open');
+                }
+            });
+
+            // Alternar la clase para mostrar u ocultar el submenú
+            submenu.classList.toggle('open');
+        });
+    });
+
     // Mostrar y ocultar submenús
     menuItems.forEach(item => {
         item.addEventListener('click', (event) => {
