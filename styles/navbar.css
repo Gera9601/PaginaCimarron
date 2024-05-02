@@ -118,6 +118,8 @@ nav ul li .menu-vertical a{
 }
 
 
+
+
 @media screen and (max-width: 1150px) {
     /* .barra-navegacion ul li img {
         height: 40px !important;
@@ -365,6 +367,18 @@ nav ul li .menu-vertical a{
     .menu-vertical-responsive > li.open .menu-vertical-mobile {
         display: block;
         max-height: 500px; /* Un valor suficientemente grande para acomodar todos los elementos */
+    }
+
+    .submenu-segundo {
+        display: none; /* Inicialmente oculto */
+        transition: max-height 0.3s ease-in-out; /* Transición suave */
+        overflow: hidden; /* Oculta el contenido que excede el tamaño del elemento */
+        max-height: 0; /* Altura máxima inicial */
+    }
+    
+    .submenu-segundo.open {
+        max-height: 500px; /* Altura máxima suficientemente grande para mostrar todo el contenido */
+        display: block;
     }
 }
 
