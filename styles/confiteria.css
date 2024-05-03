@@ -266,9 +266,104 @@ body{
 @media screen and (max-width: 950px) {
     .grid-confiteria{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(12, 1fr);
-        gap: 3% 3%;
+        gap: 2% 3%;
         padding: 5%;
+    }
+
+    .titulo-grid-confit-rosa h1,
+    .titulo-grid-confit-azul h1,
+    .titulo-grid-confit-salmon h1,
+    .titulo-grid-confit h1{
+        font-size: 1.2rem;
+    }
+
+    .confit-botanas{
+        display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    margin-top: 15%;
+    }
+    .titulo-confit{
+        width: 50%;
+    }
+    .titulo-confit h1{
+        font-size: clamp(1rem,2rem, 3rem);
+    }
+    .descripcion-confit{
+        width: 100%;
+    }
+    .descripcion-confit p{
+        text-align: start;
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+    .catalogo-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalogo-button button{
+        width: 20% !important;
+        height: 80% !important;
+        padding: 0 50px !important;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .decoracion-naranja {
+        left: 10%;
+        top: 21%;
+    }
+
+    .decoracion-naranja img{
+        width: 12vw;
+        min-width: 7vw;
+    }
+
+    .decoracion-amarilla img{
+        width: 12vw;
+        min-width: 7vw;
+    }
+
+    .decoracion-amarilla {
+        left: 22%;
+        top: 20%;
+    }
+
+    .titulo-formulario h1{
+        font-size: clamp(1rem, 5vw, 2rem);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .decoracion-amarilla {
+        left: 22%;
+        top: 20%;
+    }
+
+    .decoracion-naranja {
+        left: 3%;
+        top: 14%;
+    }
+
+    .grid-item-azul p,
+    .grid-item-rosa p,
+    .grid-item-salmon p,
+    .grid-item-verde p{
+        font-size: clamp(0.8rem, 1vw, 1rem);
+        line-height: 120%;
+    }
+
+    .titulo-grid-confit-rosa h1,
+    .titulo-grid-confit-azul h1,
+    .titulo-grid-confit-salmon h1,
+    .titulo-grid-confit h1{
+        font-size: 0.8rem;
     }
 }

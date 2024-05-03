@@ -3,6 +3,10 @@ body{
     padding: 0;
 }
 
+.resaltar-black{
+    font-family: "GraphikBold";
+}
+
 .contenedor{
     max-width: 1400px;
     margin: 0 auto;
@@ -110,7 +114,7 @@ body{
 
 .mochila-img img{
     width: 170%;            /* Ancho de la imagen al 100% del contenedor */
-    height: auto;           /* Mantiene la proporción de aspecto de la imagen */
+    height: 100%;           /* Mantiene la proporción de aspecto de la imagen */
     position: absolute;     /* Posiciona la imagen de forma absoluta dentro del contenedor */
     top: 50%;               /* Centra verticalmente la imagen */
     left: 50%;              /* Centra horizontalmente la imagen */

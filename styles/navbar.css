@@ -59,7 +59,29 @@ a{
 }
 
 
+.submenu-desktop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #EAEAEA;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
 
+.menu-vertical li {
+    position: relative;
+}
+
+.menu-vertical li:hover .submenu-desktop {
+    display: block;
+}
+
+.submenu-desktop{
+    list-style: none;
+    font-family: "GraphikBold";
+}
 
 
 nav ul li .menu-vertical {

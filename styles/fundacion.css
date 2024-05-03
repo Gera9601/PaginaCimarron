@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.diseno-movil{
+    width: 100%;
+    height: auto;
+}
+
+.titulo-fundacion-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20%;
+}
+
+.titulo-fundacion-mobile h1{
+    text-align: center;
+}
+
+.destacado-fundacion{
+    font-family: "GraphikBold";
+}
+
+.img-fundacion{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fundacion img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.img-fundacion-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fundacion-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.texto-fundacion{
+    padding: 5%;
+    background-color: #FA9226;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-2{
+    padding: 5%;
+    background-color: #EFB129;
+    color: white;
+}

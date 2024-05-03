@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.borreguito-section{
+    display: none;
+}
+.desktop{
+    display: grid;
+    grid-template-areas: 
+    "logo logo logo decoracion decoracion texto texto texto"
+    "logo logo logo productos productos productos texto2 texto2"
+    "tienda tienda tienda productos productos productos texto2 texto2"
+    "tienda tienda tienda productos productos productos texto2 texto2";
+    margin-top: 7%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+}
+.logo-desktop{
+    grid-area: logo;
+    padding: 10% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-desktop img{
+    width: 100%;
+    height: auto;
+}
+.img-tienda{
+    grid-area: tienda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img-tienda img{
+    width: 100%;            /* Ancho de la imagen al 100% del contenedor */
+    height: 100%;           /* Mantiene la proporción de aspecto de la imagen */
+    position: absolute;     /* Posiciona la imagen de forma absoluta dentro del contenedor */
+    top: 50%;               /* Centra verticalmente la imagen */
+    left: 50%;              /* Centra horizontalmente la imagen */
+    transform: translate(-50%, -50%); /* Centra exactamente la imagen en el centro */
+    object-fit: cover;      /* Escala la imagen para que cubra todo el contenedor */
+    object-position: 40% 50%;
+}
+.decoracion{
+    grid-area: decoracion;
+    background-color: #5284FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 20%;
+}
+.decoracion img{
+    width: 100%;
+    height: auto;
+}
+.texto-desk{
+    grid-area: texto;
+    padding: 10% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-desk p{
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    
+}
+.productos-img{
+    grid-area: productos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productos-img img{
+    width: 100%;
+    height: 100%;
+}
+.texto2{
+    grid-area: texto2;
+    padding: 10%;
+    background-color: #FC52BE;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.texto2 p{
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    margin-top: 20%;
+}
+.redes-sociales-desk{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.redes-sociales-desk a img{
+    width: 65%;
+    height: auto;
+}
+
+.redes-sociales-desk img:last-child{
+    margin-left: 10%;
+}
+
+.redes-sociales-desk img:first-child{
+    margin-right: 10% ;
+}
+
+
+@media screen and (max-width: 950px) {
+.desktop{
+    display: none;
+}
+.borreguito-section{
+    display: grid;
+    grid-template-areas: "logo logo"
+    "texto-1 sandwich"
+    "texto-2 texto-2"
+    "tienda tienda"
+    "redes redes";
+   padding: 8%;
+}
+
+.logo-container{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+}
+.logo-container img{
+    width: 60%;
+    height: 100%;
+}
+.texto-borreguito{
+    grid-area: texto-1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8% 0;
+}
+.productos-borreguito{
+    grid-area: sandwich;
+}
+
+.productos-borreguito img{
+    width: 100%;
+    height: 100%;
+}
+.texto-borreguito-2{
+    grid-area: texto-2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10%;
+    background-color: #5284FB;
+    color: white;
+}
+.borreguito-tienda-img{
+    grid-area: tienda;
+    
+    
+}
+.borreguito-tienda-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.redes-sociales{
+    grid-area: redes;
+    background-color: #FC52BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    
+}
+.redes-sociales img:first-child{
+   margin-right: 5%;
+}
+.redes-sociales img:last-child{
+    margin-left: 5%;
+}
+
+.redes-sociales img{
+    width: 7%;
+}
+
+}
