@@ -274,7 +274,7 @@ nav ul li .menu-vertical li:hover {
 }
 
 .parrafo-slide p {
-    font-size: clamp(0.7rem, 1vw, 2rem);
+    font-size: clamp(0.7rem, 1.2vw, 2rem);
 }
 
 .button-slide1 {
@@ -334,7 +334,7 @@ nav ul li .menu-vertical li:hover {
 }
 
 .parrafo-slide-retail p {
-    font-size: clamp(0.7rem, 1vw, 2rem);
+    font-size: clamp(0.7rem, 1.2vw, 2rem);
 }
 
 .button-slide1-retail {
