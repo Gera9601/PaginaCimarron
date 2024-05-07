@@ -3,9 +3,74 @@ body{
     padding: 0;
 }
 
+.destacado-fundacion{
+    font-family: "GraphikBold";
+}
+
+.desktop{
+    margin-top: 7%;
+}
+
 .diseno-movil{
+    display: none;
+}
+
+.desktop-primera-parte{
+    display: grid;
+    grid-template-areas: "titulo titulo titulo decoracion decoracion imagen-1 imagen-1"
+    "texto texto texto decoracion decoracion imagen-1 imagen-1";
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+}
+
+.titulo-fundacion-desktop{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 20%;
+}
+
+.titulo-fundacion-desktop h1{
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.texto-fundacion-texto{
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10%;
+    background-color: #FA9226;
+    color: white;
+}
+.texto-fundacion-texto p{
+    font-size: clamp(0.8rem, 1vw, 2rem);
+}
+
+.decoracion-desktop{
+    grid-area: decoracion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoracion-desktop img{
     width: 100%;
-    height: auto;
+    height: 100%;
+}
+
+.imagen-desktop-fundacion{
+    grid-area: imagen-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-desktop-fundacion img{
+    width: 100%;
+    height: 100%;
 }
 
 .titulo-fundacion-mobile{
@@ -17,6 +82,113 @@ body{
 
 .titulo-fundacion-mobile h1{
     text-align: center;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+}
+
+
+
+
+.desktop-segunda-parte{
+    display: grid;
+    grid-template-areas: "imagen imagen imagen texto texto texto decoracion"
+    "imagen imagen imagen logo logo logo decoracion";
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+}
+
+.imagen-directora{
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-directora img{
+    width: 100%;
+    height: 100%;
+}
+
+.texto-fundacion-2{
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color: #EFB129;
+    color: white;
+}
+
+.texto-fundacion-2 p{
+    font-size: clamp(0.8rem, 1vw, 2rem);
+}
+
+.decoracion-desktop-2{
+    grid-area: decoracion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoracion-desktop-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo-fundacion-desktop{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.logo-fundacion-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-fundacion-img img{
+    width: 90%;
+    height: auto;
+}
+
+.logo-fundacion-desktop .redes-fundacion a img{
+    width: 20%;
+    height: auto;
+}
+
+.logo-fundacion-desktop .redes-fundacion a:first-child{
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+.logo-fundacion-desktop .redes-fundacion a:last-child{
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 950px) {
+
+.desktop{
+    display: none;
+}
+
+.diseno-movil{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titulo-fundacion-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20%;
+}
+
+.titulo-fundacion-mobile h1{
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 4rem);
 }
 
 .destacado-fundacion{
@@ -57,8 +229,58 @@ body{
     height: 100%;
 }
 
+.texto-fundacion p{
+    font-size: clamp(0.8rem, 2vw, 2rem); 
+}
+
 .texto-2{
     padding: 5%;
     background-color: #EFB129;
     color: white;
+}
+
+.texto-2 p{
+    font-size: clamp(0.8rem, 2vw, 2rem);
+}
+.logo-fundacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+.redes-fundacion{
+    margin-top: 6%;
+}
+.redes-fundacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+@media screen and (max-width: 660px) {
+    .diseno-movil{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .diseno-movil{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .diseno-movil{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .diseno-movil{
+        margin-top: 30%;
+    }
 }

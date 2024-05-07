@@ -146,6 +146,10 @@ body{
     align-items: center;
     padding: 8% 0;
 }
+
+.texto-placitaCimarron p{
+    font-size: clamp(0.7rem, 2vw, 4rem);
+}
 .productos-placitaCimarron{
     grid-area: sandwich;
 }
@@ -162,6 +166,10 @@ body{
     padding: 10%;
     background-color: #EFB129;
     color: white;
+}
+
+.texto-placitaCimarron-2 p{
+    font-size: clamp(0.8rem, 2vw, 4rem);
 }
 .placitaCimarron-tienda-img{
     grid-area: tienda;
@@ -190,8 +198,27 @@ body{
     margin-left: 5%;
 }
 
-.redes-sociales img{
-    width: 7%;
+.redes-sociales a img{
+    width: 60%;
 }
 
 }
+
+@media screen and (max-width: 660px) {
+    .placitaCimarron-section{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .placitaCimarron-section{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .placitaCimarron-section{
+        margin-top: 20%;
+    }
+}
+

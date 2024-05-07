@@ -13,26 +13,27 @@ body ol{
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "portada portada portada portada portada"
+    grid-template-areas: "titulo titulo titulo titulo titulo"
+    "portada portada portada portada portada"
     "descripcion descripcion descripcion decoracion decoracion";
-    margin-top: 6%;
+    margin-top: 7%;
 }
-
+.quienes-somos{
+    grid-area: titulo;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
 .imagen-portada{
     grid-area: portada;
     width: 100%;
     position: relative;
 }
-.quienes-somos{
-    position: absolute;
-    top: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-}
+
 .destacado {
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: "GraphikBold";
 }
@@ -42,7 +43,7 @@ body ol{
 
 .triangulo-cremita{
     position: absolute;
-    top: 10%;
+    top: -18%;
     left: 5%;
 }
 
@@ -603,9 +604,13 @@ body ol{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
-        grid-template-areas: "portada"
+        grid-template-areas: "titulo"
+        "portada"
         "descripcion";
         margin-top: 9%;
+    }
+    .triangulo-cremita{
+        display: none;
     }
 
     .descripcion-portada{

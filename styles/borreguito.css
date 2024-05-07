@@ -146,6 +146,9 @@ body{
     align-items: center;
     padding: 8% 0;
 }
+.texto-borreguito p{
+    font-size: clamp(0.7rem, 2vw, 4rem);
+}
 .productos-borreguito{
     grid-area: sandwich;
 }
@@ -162,6 +165,10 @@ body{
     padding: 10%;
     background-color: #5284FB;
     color: white;
+}
+
+.texto-borreguito-2 p{
+    font-size: clamp(0.7rem, 2vw, 4rem);
 }
 .borreguito-tienda-img{
     grid-area: tienda;
@@ -190,8 +197,32 @@ body{
     margin-left: 5%;
 }
 
-.redes-sociales img{
-    width: 7%;
+.redes-sociales a img{
+    width: 60%;
 }
 
+}
+
+@media screen and (max-width: 660px) {
+    .borreguito-section{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .borreguito-section{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .borreguito-section{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .borreguito-section{
+        margin-top: 30%;
+    }
 }

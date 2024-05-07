@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.mobile{
+    display: none;
+}
+
+.desktop{
+    margin-top: 7%;
+}
+.primer-grid-truff{
+    display: grid;
+    grid-template-areas: "imagen datos texto";
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.imagen-truff{
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35% 8%;
+}
+
+.imagen-truff img{
+    width: 100%;
+    height: 100%;
+}
+
+.datos-truff{
+    grid-area: datos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    background-color: #FEC270;
+}
+
+.datos-truff .alianzas{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.datos-truff .alianzas p{
+    line-height: 1.5rem;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    text-align: start;
+    margin-left: 4%;
+    font-family: "GraphikSemiBold";
+}
+
+.datos-numeros{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.datos-numeros p:first-child{
+    text-align: center;
+    margin-right: 5%;
+    
+}
+
+.datos-numeros p{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-weight: 800;
+    font-family: "GraphikSemiBold";
+    text-align: start;
+    
+}
+.datos-numeros span{
+    text-align: center;
+    margin-right: 5%;
+}
+.historia-truff{
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+
+.historia-truff p{
+    line-height: 1.3rem;
+    font-size: clamp(0.8rem, 1vw, 2rem);
+}
+
+.segundo-grid-truff{
+    display: grid;
+    grid-template-areas: "produccion produccion texto texto imagenes imagenes imagenes triangulos";
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+}
+.producc-truff{
+    grid-area: produccion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.producc-truff img{
+    width: 100%;
+    height: 100%;
+}
+
+.segundo-texto-truff{
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color: #23495B;
+    color: white;
+}
+
+.segundo-texto-truff p{
+    font-size: clamp(0.8rem, 1vw, 2rem);
+}
+
+.img-redes{
+    grid-area: imagenes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-redes .imagen-truffino{
+    width: 100%;
+    height: 70%;
+}
+
+.img-redes .imagen-truffino img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-redes .redes-truff{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-redes .redes-truff a{
+    width: 10%;
+    height: auto;
+}
+
+.img-redes .redes-truff a img{
+    width: 100%;
+    height: auto;
+}
+
+.img-redes .redes-truff a:first-child{
+    margin-right: 5%;
+}
+
+.img-redes .redes-truff a:last-child{
+    margin-left: 5%;
+}
+
+.triangulos{
+    grid-area: triangulos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangulos img{
+    width: 100%;
+    height: 100%;
+}
+
+.destacado{
+    font-weight: 900;
+    font-family: "GraphikBold";
+}
+
+.destacado-numero{
+    font-weight: 900;
+    font-family: "GraphikBold";
+    font-size: clamp(3rem, 5vw, 5rem);
+}
+
+@media screen and (max-width: 950px) {
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+    .logo-mobile-truff{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 5%;
+    }
+    .logo-mobile-truff img{
+        width: 60%;
+    }
+    .truff-info-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        background-color: #FEC270;
+    }
+    .truff-info-mobile p{
+        text-align: center;
+    }
+    .truff-info-mobile p:last-child{
+        margin-top: 1.7%;
+        margin-left: 5%;
+    }
+
+    .texto-mobile-truff{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .chocolates-mobile-truff{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chocolates-mobile-truff img{
+        width: 100%;
+        height: auto;
+    }
+    .texto-mobile-truff-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        background-color: #23495B;
+        color: white;
+    }
+
+    .redes-mobile-truffino{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .redes-mobile-truffino a img{
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .mobile{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .mobile{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mobile{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .mobile{
+        margin-top: 30%;
+    }
+}

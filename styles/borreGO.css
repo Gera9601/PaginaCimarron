@@ -145,6 +145,10 @@ body{
     align-items: center;
     padding: 8% 0;
 }
+
+.texto-borreGO p{
+    font-size: clamp(0.7rem, 2vw, 4rem);
+}
 .sandwich-borreGO-img{
     grid-area: sandwich;
 }
@@ -161,6 +165,10 @@ body{
     padding: 10%;
     background-color: #29B16E;
     color: white;
+}
+
+.texto-borreGO-2 p{
+    font-size: clamp(0.7rem, 2vw, 4rem);
 }
 .borrego-tienda-img{
     grid-area: tienda;
@@ -189,8 +197,32 @@ body{
     margin-left: 5%;
 }
 
-.redes-sociales img{
-    width: 7%;
+.redes-sociales a img{
+    width: 60%;
 }
 
+}
+
+@media screen and (max-width: 660px) {
+    .borreGO-section{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .borreGO-section{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .borreGO-section{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .borreGO-section{
+        margin-top: 30%;
+    }
 }

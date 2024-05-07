@@ -114,7 +114,7 @@ body{
     align-items: end;
     flex-direction: column;
     padding: 10% 5%;
-    background: linear-gradient(to top, #FFF5EF 20%, #A37535 20%);
+    background: linear-gradient(to top, #FFF5EF 27%, #A37535 20%);
     position: relative;
 }
 
@@ -134,6 +134,16 @@ body{
 
 .catalogo-button{
     margin-top: 5%;
+}
+.empaques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.empaques img{
+    width: 100%;
+    height: 100%;
 }
 
 .texto-confit .catalogo-button button{
@@ -162,7 +172,7 @@ body{
 }
 .decoracion-amarilla{
     left: 22%;
-    bottom: 40%;
+    bottom: 46%;
 }
 .decoracion-amarilla img{
     width: 70%;
@@ -185,7 +195,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(9, 1fr);
     gap: 3% 3%;
-    padding: 5%;
+    padding: 10%;
 }
 .grid-item-verde{
     display: flex;
@@ -194,6 +204,7 @@ body{
     padding: 15% 10%;
     background-color:#29B16E;
     color: white;
+    line-height: 1.4rem;
 }
 .grid-item-azul{
     display: flex;
@@ -202,6 +213,7 @@ body{
     padding: 15% 10%;
     background-color:#5284FB;
     color: white;
+    line-height: 1.4rem;
 }
 
 .titulo-grid-confit-azul h1{
@@ -215,6 +227,7 @@ body{
 }
 .titulo-grid-confit-azul p{
     text-align: start;
+  
 }
 .titulo-grid-confit{
     display: flex;
@@ -243,6 +256,7 @@ body{
     padding: 15% 10%;
     background-color:#FC52BE;
     color: white;
+    line-height: 1.4rem;
 }
 
 .grid-item-salmon{
@@ -252,6 +266,7 @@ body{
     padding: 15% 10%;
     background-color:#FD8D77;
     color: white;
+    line-height: 1.4rem;
 }
 .titulo-grid-confit-salmon h1{
     color: #FD8D77;
@@ -262,6 +277,16 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.grid-item-img img{
+    width: 100%;
+    height: auto;
+}
+
+.grid-item-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (max-width: 950px) {
     .grid-confiteria{
@@ -269,7 +294,7 @@ body{
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(12, 1fr);
         gap: 2% 3%;
-        padding: 5%;
+        padding: 17%;
     }
 
     .titulo-grid-confit-rosa h1,
@@ -318,7 +343,11 @@ body{
 
     .decoracion-naranja {
         left: 10%;
-        top: 21%;
+        top: 8%;
+    }
+
+    .decoracion-amarilla{
+        top: 7% !important;
     }
 
     .decoracion-naranja img{
@@ -338,6 +367,12 @@ body{
 
     .titulo-formulario h1{
         font-size: clamp(1rem, 5vw, 2rem);
+    }
+}
+
+@media screen and (max-width: 724px) {
+    .grid-confiteria{
+        padding: 12%;
     }
 }
 
@@ -365,5 +400,48 @@ body{
     .titulo-grid-confit-salmon h1,
     .titulo-grid-confit h1{
         font-size: 0.8rem;
+    }
+    .empaques img{
+        width: 138%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .grid-confiteria{
+        margin-top: 10%;
+    }
+
+    .grid-confiteria{
+        padding: 11%;
+    }
+
+}
+
+@media screen and (max-width: 638px) {
+    .grid-confiteria{
+        margin-top: 10%;
+    }
+
+    .grid-confiteria{
+        padding: 10%;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .grid-confiteria{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid-confiteria{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .grid-confiteria{
+        margin-top: 30%;
     }
 }

@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.mobile{
+    display: none;
+}
+
+.desktop{
+    margin-top: 7%;
+}
+.primer-grid-gale{
+    display: grid;
+    grid-template-areas: "imagen datos texto";
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.imagen-gale{
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35% 8%;
+}
+
+.imagen-gale img{
+    width: 100%;
+    height: 100%;
+}
+
+.datos-gale{
+    grid-area: datos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    background-color: #E2CCFD;
+}
+
+.datos-gale .alianzas{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.datos-gale .alianzas p{
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.datos-numeros{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.datos-numeros p:first-child{
+    text-align: center;
+    margin-right: 5%;
+}
+
+.datos-numeros p{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-weight: 800;
+}
+.historia-gale{
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+
+.historia-gale p{
+    line-height: 1.3rem;
+}
+
+.segundo-grid-gale{
+    display: grid;
+    grid-template-areas: "produccion produccion texto texto imagenes imagenes imagenes triangulos";
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+}
+.producc-gale{
+    grid-area: produccion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.producc-gale img{
+    width: 100%;
+    height: 100%;
+}
+
+.segundo-texto-gale{
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color: #202040;
+    color: white;
+}
+
+.segundo-texto-gale p{
+    line-height: 1.3rem;
+}
+
+.img-redes{
+    grid-area: imagenes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-redes .imagen-galeria{
+    width: 100%;
+    height: 70%;
+}
+
+.img-redes .imagen-galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-redes .redes-gale{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-redes .redes-gale a{
+    width: 22%;
+    height: auto;
+}
+
+.img-redes .redes-gale a img{
+    width: 60%;
+}
+
+.img-redes .redes-gale img:first-child{
+    margin-right: 5%;
+}
+
+.img-redes .redes-gale img:last-child{
+    margin-left: 5%;
+}
+
+.triangulos{
+    grid-area: triangulos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangulos img{
+    width: 100%;
+    height: 100%;
+}
+
+.destacado{
+    font-weight: 900;
+    font-family: "GraphikBold";
+}
+
+.destacado-numero{
+    font-weight: 900;
+    font-family: "GraphikBold";
+    font-size: clamp(3rem, 4vw, 4rem);
+}
+
+@media screen and (max-width: 950px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{display: initial;}
+    .logo-mobile-gale{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 5%;
+    }
+    .logo-mobile-gale img{
+        width: 60%;
+    }
+    .gale-info-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        background-color: #E2CCFD;
+    }
+    .gale-info-mobile p{
+        text-align: center;
+    }
+    .gale-info-mobile p:last-child{
+        margin-top: 1.7%;
+        margin-left: 5%;
+    }
+
+    .texto-mobile-gale{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .galeria-img-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .galeria-img-mobile img{
+        width: 100% !important;
+        height: auto;
+    }
+    .texto-mobile-gale-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        background-color: #202040;
+        color: white;
+    }
+
+    .redes-mobile-galeria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .redes-mobile-galeria a img{
+        width: 70%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    .mobile{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .mobile{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mobile{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .mobile{
+        margin-top: 30%;
+    }
+}
