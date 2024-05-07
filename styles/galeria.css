@@ -26,6 +26,11 @@ body{
 .imagen-gale img{
     width: 100%;
     height: 100%;
+    transition: all 0.5s ease-out allow-discrete;
+}
+
+.imagen-gale img:hover{
+    transform: scale(1.2);
 }
 
 .datos-gale{

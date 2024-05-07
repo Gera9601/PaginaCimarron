@@ -144,6 +144,11 @@ body{
 .empaques img{
     width: 100%;
     height: 100%;
+    transition: all 0.5s ease-out allow-discrete;
+}
+
+.empaques img:hover{
+    transform: scale(1.2);
 }
 
 .texto-confit .catalogo-button button{
